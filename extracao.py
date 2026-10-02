@@ -60,7 +60,7 @@ colunas_date = {
 }
 
 # Esta função ela recebe um arquivo como 1º param e as colunas do 2º param são do dicionário criado acima,
-# ou seja, 
+# ou seja, deste modo é possível passar o cada coluna da lista acima referente a seu arquivo pai
 def analisar_csv(caminho, colunas_date = ''):
     df = pd.read_csv(caminho)
 
@@ -78,3 +78,84 @@ for i in arquivos:
     datas = colunas_date.get(i.name)
     df = analisar_csv(i, datas)
     verificar_arquivos(i)
+
+
+# ---------------- Realizando Integração da API Via CEP -------------------
+
+# Por conta do dataset não oferecer o cep completo, apenas o prefixo, irei assumir
+# o sufixo do cep como "000", assim ainda mantenho a informação do bairro mas sem 
+# enxergar a rua exatamente daquela localização
+
+# Primeiro como são muitos pedidos vamos pegar o prefixos unicos de cep
+
+ceps_prefixo = []
+consulta_cep_prefixo = pd.read_csv(pasta_csv / 'olist_geolocation_dataset.csv')
+# Eliminar os valores nulos e as duplicatas
+df_coluna_cep = consulta_cep_prefixo['geolocation_zip_code_prefix'].dropna().unique()
+# Neste passo é necessário transformar a coluna para string pois ela com o tipo int
+# perde-se o "0" caso seja inicial no número
+df_coluna_cep = df_coluna_cep.astype(str)
+
+# Para os números que tem apenas 4 caracteres em seu prefixo, como no csv foi tratado como int
+# então é pressuposto com seja zero no incio, e como explicado acima será um geral da região
+# por isso o acréscimo de "000" ao final
+for i in df_coluna_cep:
+    ceps_prefixo.append(i)
+
+print(len(ceps_prefixo))
+
+
+
+enderecos = list()
+localidade = dict()
+def consulta_cep(prefixo):
+    import requests
+    from requests.exceptions import RequestException
+    from time import sleep
+    cep = f'{int(prefixo):05d}000'
+
+    url = f'https://viacep.com.br/ws/{cep}/json/'
+
+    try:
+        request = requests.get(url, timeout = 10)
+        sleep(0.5)
+        response = request.json()
+    except RequestException as erro:
+        print(f'Erro ao consultar CEP: {cep} -> ({erro})')
+        return
+    if request.status_code == 200:
+        response
+        if 'erro' in response:
+            print(f'CEP não encontrado: {cep}')
+    
+    localidade['cep'] = response.get('cep')
+    localidade['bairro'] = response.get('bairro')
+    localidade['estado'] = response.get('estado')
+    localidade['regiao'] = response.get('regiao')
+
+
+    enderecos.append(localidade)
+    
+    return print(enderecos)
+
+for i in ceps_prefixo:
+    consulta_cep(i)
+
+
+print(len(enderecos))
+
+
+
+'''
+    Teste de requisição unitário
+
+import requests
+
+url = 'https://viacep.com.br/ws/01037000/json/'
+
+response = requests.get(url)
+
+response_json = response.json()
+if response.status_code == 200:
+    print(response_json)
+'''

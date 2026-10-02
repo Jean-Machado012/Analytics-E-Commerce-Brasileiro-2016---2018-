@@ -38,6 +38,24 @@ Além dos dados disponibilizados pelo dataset, será utilizada uma API pública 
 - Análise inicial dos tipos de dados.
 - Conversão das colunas de data que estavam como "string" para o tipo "datetime".
 
+
+## 2ª Etapa — Requisição à API ViaCEP
+
+- Implementei o consumo da API ViaCEP utilizando Python e estruturei o processo de consulta dentro de uma função, permitindo que o código
+  seja reutilizado e escalado para os diferentes prefixos de CEP presentes na base.
+  
+
+- Durante a implementação, identifiquei uma limitação relacionada ao volume de requisições. A documentação da ViaCEP informa que o uso
+  massivo da API pode ocasionar bloqueio automático, porém não define uma quantidade específica de requisições que resulte nesse bloqueio.
+  
+- Como estratégia para tornar o processo mais resiliente, pretendo realizar as consultas em lotes, persistir os resultados e controlar
+  quais prefixos já foram processados. Dessa forma, caso o processo seja interrompido ou o acesso seja temporariamente bloqueado, será
+  possível retomar a execução a partir do último conjunto de dados processado, evitando novas requisições para os prefixos já tratados.
+  
+- Como lógica, primeiramente li o arquivo que possui os prefixos, realizei a limpeza das linhas em branco e eliminei os prefixos duplicados.
+  Feito isso, como não vou utilizar todos os dados que a API fornce pensei em armazenar as informações que eu quero em um dicionário, e depois
+  esse dicionário ele vai ser colocado dentro de uma lista
+
 ### Status
 
 - Em desenvolvimento

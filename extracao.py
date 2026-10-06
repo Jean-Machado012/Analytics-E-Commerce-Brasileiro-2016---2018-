@@ -1,5 +1,6 @@
 import pandas as pd
 from pathlib import Path
+import json
 
 # Registrando o caminho desta forma possibilita o repositório ser clonado em qualquer máquina,
 # então realizando desta forma, pode-se descartar o uso das bibliotecas "dotenv" e "os", lembrando
@@ -14,7 +15,7 @@ arquivos = list(pasta_csv.glob('*.csv'))
 # ------------------   Realizando tratamento e verificando qualidade dos arquivos --------------------------
 
 # Obs: Caso exista linha, colunas ou registro duplicado, ele será removido
-
+'''
 def separador_linha():
     print('-'*50)
 
@@ -78,7 +79,7 @@ for i in arquivos:
     datas = colunas_date.get(i.name)
     df = analisar_csv(i, datas)
     verificar_arquivos(i)
-
+'''
 
 # ---------------- Realizando Integração da API Via CEP -------------------
 
@@ -102,60 +103,134 @@ df_coluna_cep = df_coluna_cep.astype(str)
 for i in df_coluna_cep:
     ceps_prefixo.append(i)
 
-print(len(ceps_prefixo))
 
 
 
 enderecos = list()
-localidade = dict()
 def consulta_cep(prefixo):
     import requests
     from requests.exceptions import RequestException
     from time import sleep
+
     cep = f'{int(prefixo):05d}000'
 
     url = f'https://viacep.com.br/ws/{cep}/json/'
 
+    consulta_cep_completo = {
+        'prefixo' : prefixo,
+        'cep' : cep,
+        'bairro' : '',
+        'estado' : '',
+        'regiao' : '',
+        'status' : ''
+    }
+
     try:
         request = requests.get(url, timeout = 10)
         sleep(0.5)
+
+        if request.status_code != 200:
+            consulta_cep_completo['status'] = f'erro_http_{request.status_code}'
+            return consulta_cep_completo
+
         response = request.json()
+
     except RequestException as erro:
         print(f'Erro ao consultar CEP: {cep} -> ({erro})')
-        return
-    if request.status_code == 200:
-        response
-        if 'erro' in response:
-            print(f'CEP não encontrado: {cep}')
-    
-    localidade['cep'] = response.get('cep')
-    localidade['bairro'] = response.get('bairro')
-    localidade['estado'] = response.get('estado')
-    localidade['regiao'] = response.get('regiao')
+        consulta_cep_completo['status'] = 'erro_conexao'
+        return consulta_cep_completo
+
+    if 'erro' in response:
+        print(f'CEP não encontrado: {cep}')
+        consulta_cep_completo['status'] = 'não_encontrado'
+        return consulta_cep_completo
 
 
-    enderecos.append(localidade)
-    
-    return print(enderecos)
+    consulta_cep_completo['cep'] = response.get('cep', '')
+    consulta_cep_completo['bairro'] = response.get('bairro', '')
+    consulta_cep_completo['estado'] = response.get('estado', '')
+    consulta_cep_completo['regiao'] = response.get('regiao', '')
+    consulta_cep_completo['status'] = 'encontrado'
+  
 
-for i in ceps_prefixo:
-    consulta_cep(i)
-
-
-print(len(enderecos))
-
+    return consulta_cep_completo
 
 
-'''
-    Teste de requisição unitário
+# ----------------------- Carregando checkpoint -------------------------
+# Checkpoint vai servir justamente para saber qual foi o último prefixo consultado na API
+# e a partir do último realizar a proxima consulta e salvar tudo em json
 
-import requests
+# Definindo o caminho para salvar os enderecos num json e verificando
+# se o arquivo já não existe, caso ele exista apenas carrega o arquivo
+# caso não exista ele cria uma lista vazia
+enderecos_json = base_dir / 'Enderecos' / 'enderecos.json'
+checkpoint_json = base_dir / 'Enderecos' / 'checkpoint.json'
 
-url = 'https://viacep.com.br/ws/01037000/json/'
+if enderecos_json.exists():
+    with open(enderecos_json, 'r', encoding = 'utf-8') as arquivo:
+        enderecos = json.load(arquivo)
+else:
+    enderecos = []
 
-response = requests.get(url)
 
-response_json = response.json()
-if response.status_code == 200:
-    print(response_json)
-'''
+if checkpoint_json.exists():
+    with open(checkpoint_json, 'r', encoding='utf-8') as arquivo:
+        checkpoint = json.load(arquivo)
+
+    inicio = checkpoint['posicao'] + 1
+
+else:
+    inicio = 0
+
+
+# Realizando as requisições. Então criado contador para saber a quantidade de requisições
+# que estão sendo feitas, caso esse valor seja maior que 400 ele já stopa o loop
+# se ainda for menor que 400 ele starta a função e adciona o resultado na lista de endereços
+limite_requisicoes = 400
+cont_rq = 0
+for i in range(inicio, len(ceps_prefixo)):
+    prefixo = ceps_prefixo[i]
+
+    if cont_rq >= limite_requisicoes:
+        break
+
+    resultado = consulta_cep(prefixo)
+    enderecos.append(resultado)
+    cont_rq += 1
+
+    # Para previnir alguma falha de energia ou que o computador em questão trave, achei melhor
+    # salvar o json a cada consulta realizada na API
+    checkpoint = {
+        'ultimo_prefixo' : prefixo,
+        'posicao' : i,
+        'rquisicoes_realizadas' : cont_rq,
+        'status' : 'em_andamento'
+    }
+
+    with open(enderecos_json, 'w', encoding =   'utf-8') as arquvivo_enderecos:
+        json.dump(
+            enderecos,
+            arquvivo_enderecos,
+            ensure_ascii = False, # Não permite caracteres Unicode
+            indent = 4
+        )
+
+    with open(checkpoint_json, 'w', encoding = 'utf-8') as arquivo_checkpoint:
+        json.dump(
+            checkpoint,
+            arquivo_checkpoint,
+            ensure_ascii = False, # Não permite caracteres Unicode
+            indent = 4
+        )
+
+    print(f'Processado: {i} || {cont_rq} / {limite_requisicoes}')
+
+
+print()
+print(f'Requisições realizadas: {cont_rq}')
+print(f'Total de CEPs inseridos no arquivo JSON: {len(enderecos)}') # A contagem é na lista porque todos valores da lista vão para o JSON
+
+
+
+
+

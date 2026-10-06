@@ -56,6 +56,21 @@ Além dos dados disponibilizados pelo dataset, será utilizada uma API pública 
   Feito isso, como não vou utilizar todos os dados que a API fornce pensei em armazenar as informações que eu quero em um dicionário, e depois
   esse dicionário ele vai ser colocado dentro de uma lista
 
+- Rrealizei a integração com a API ViaCEP para enriquecimento dos dados de localização presentes no dataset, como a base possui apenas o prefixo do CEP, foi utilizado o sufixo `000` para formar um CEP completo e realizar as consultas à API. Durante os testes, foi identificado que, após um determinado volume de requisições, a API passou a apresentar erros de conexão e indisponibilidade temporária. A documentação da ViaCEP não estabelece uma quantidade máxima de requisições por período que pudesse ser utilizada como referência.
+
+- Diante disso, defini um limite de 400 requisições por execução. Esse valor não representa um limite oficial da ViaCEP, mas uma definição adotada para o projeto a partir dos testes realizados e considerada mais segura para evitar um volume excessivo de requisições, para garantir que nenhuma informação seja perdida durante o processo, a pipeline foi estruturada para armazenar o resultado de cada tentativa, independentemente de a consulta retornar dados, não encontrar o CEP ou apresentar algum erro.
+
+Também foram criados dois arquivos JSON para garantir a persistência e a retomada do processo:
+- **`enderecos.json`** — armazena os resultados das consultas realizadas à API, incluindo os dados encontrados e as ocorrências em que não foi possível obter informações.
+- **`checkpoint.json`** — armazena o estado da execução, incluindo a posição do último prefixo consultado, a quantidade de requisições realizadas e o status da pipeline.
+
+Dessa forma, caso a execução seja interrompida, o processo pode ser retomado posteriormente a partir da última posição registrada, sem a necessidade de realizar novamente as consultas já processadas.
+
+### Próxima etapa
+
+Implementar um mecanismo de **orquestração da pipeline**, permitindo que o processo seja executado novamente de forma controlada até que todos os **19.015 prefixos únicos de CEP** sejam processados, utilizando o `checkpoint.json` para determinar automaticamente o ponto de retomada.
+
+
 ### Status
 
 - Em desenvolvimento

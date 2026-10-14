@@ -86,13 +86,26 @@ Nesta etapa, comecei a estruturar a orquestração das consultas à API ViaCEP u
 
 - Testei o percurso dos itens selecionados, preservando o índice original de cada prefixo para utilizá-lo posteriormente na atualização do checkpoint. Verifiquei o retorno da tarefa de consulta, incluindo o tratamento de erros de conexão.
 
-### Próxima etapa
+- Integrei a consulta à API ao processamento completo dos lotes e adicionado cada resultado à lista de endereços e validar sua gravação no JSON.
 
-- Integrar a consulta à API ao processamento completo dos lotes.
-- Adicionar cada resultado à lista de endereços e validar sua gravação no JSON.
-- Integrar a atualização do checkpoint ao fluxo, registrando o progresso após cada consulta.
+- Atualização do checkpoint ao fluxo, registrando o progresso após cada consulta.
+
 - Testar a retomada do processamento e o comportamento da pipeline diante de falhas.
-- Validar a execução de lotes completos antes de avançar para as próximas etapas de tratamento e análise dos dados.
+
+- Validada a execução de lotes completos antes de avançar para as próximas etapas de tratamento.
+
+
+### Próximas etapas
+
+- Implementar a conexão do pipeline Python com o banco de dados MySQL.
+
+- Realizar a carga inicial das tabelas CSV do dataset Olist no banco de dados.
+
+- Implementar a inserção dos dados de endereços obtidos pela API ViaCEP, utilizando processamento em lotes.
+
+- Validar a integridade dos dados carregados e a consistência entre as tabelas.
+
+- Desenvolver consultas SQL para relacionar as tabelas e preparar os dados para análise.
 
 
 ### Status

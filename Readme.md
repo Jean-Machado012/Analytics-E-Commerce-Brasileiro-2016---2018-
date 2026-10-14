@@ -66,9 +66,46 @@ Também foram criados dois arquivos JSON para garantir a persistência e a retom
 
 Dessa forma, caso a execução seja interrompida, o processo pode ser retomado posteriormente a partir da última posição registrada, sem a necessidade de realizar novamente as consultas já processadas.
 
-### Próxima etapa
+## 3º Etapa - Implementando orquestração do pipeline com o Prefect
 
-Implementar um mecanismo de **orquestração da pipeline**, permitindo que o processo seja executado novamente de forma controlada até que todos os **19.015 prefixos únicos de CEP** sejam processados, utilizando o `checkpoint.json` para determinar automaticamente o ponto de retomada.
+Nesta etapa, comecei a estruturar a orquestração das consultas à API ViaCEP utilizando o Prefect. O objetivo é organizar o fluxo de execução, separar as responsabilidades do código e facilitar a continuidade do processamento caso ocorram interrupções.
+
+- Separação das responsabilidades: adaptei a função solicitar_api() para receber um prefixo por chamada e retornar um dicionário com os dados obtidos e o status da consulta. Com isso, a consulta individual ficou separada da lógica responsável por controlar o processamento em lotes.
+
+- Criação das tasks: comecei a dividir o processo em tarefas com o Prefect, incluindo o carregamento da lista de prefixos, a consulta à API, a leitura do checkpoint e o carregamento dos endereços já armazenados.
+
+- Retomada do processamento: implementei a lógica para ler o checkpoint.json e identificar a posição inicial da próxima execução, evitando que o fluxo comece novamente do primeiro prefixo quando já existe um progresso registrado.
+
+- Seleção dos lotes: estruturei a seleção dos prefixos com base na posição inicial e no limite operacional de 400 requisições por execução. Esse limite foi definido para o projeto e não representa um limite oficial da API ViaCEP.
+
+- Preparação da persistência: criei tasks específicas para salvar os resultados em `enderecos.json` e atualizar o `checkpoint.json`. A integração dessas tarefas ao processamento ainda será concluída e validada nas próximas etapas.
+
+- Verifiquei a importação da função de consulta entre os arquivos extracao.py e orquestracao.py, desativando o bloco antigo que executava o processamento automaticamente durante a importação.
+
+- Validei a seleção do lote a partir do checkpoint e a identificação do primeiro e do último prefixo planejados.
+
+- Testei o percurso dos itens selecionados, preservando o índice original de cada prefixo para utilizá-lo posteriormente na atualização do checkpoint. Verifiquei o retorno da tarefa de consulta, incluindo o tratamento de erros de conexão.
+
+- Integrei a consulta à API ao processamento completo dos lotes e adicionado cada resultado à lista de endereços e validar sua gravação no JSON.
+
+- Atualização do checkpoint ao fluxo, registrando o progresso após cada consulta.
+
+- Testar a retomada do processamento e o comportamento da pipeline diante de falhas.
+
+- Validada a execução de lotes completos antes de avançar para as próximas etapas de tratamento.
+
+
+### Próximas etapas
+
+- Implementar a conexão do pipeline Python com o banco de dados MySQL.
+
+- Realizar a carga inicial das tabelas CSV do dataset Olist no banco de dados.
+
+- Implementar a inserção dos dados de endereços obtidos pela API ViaCEP, utilizando processamento em lotes.
+
+- Validar a integridade dos dados carregados e a consistência entre as tabelas.
+
+- Desenvolver consultas SQL para relacionar as tabelas e preparar os dados para análise.
 
 
 ### Status

@@ -1,0 +1,6410 @@
+[
+    {
+        "prefixo": "1037",
+        "cep": "01037-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1046",
+        "cep": "01046-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1041",
+        "cep": "01041-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1035",
+        "cep": "01035-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1012",
+        "cep": "01012-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1047",
+        "cep": "01047-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1013",
+        "cep": "01013-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1029",
+        "cep": "01029-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1011",
+        "cep": "01011-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1032",
+        "cep": "01032-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1014",
+        "cep": "01014-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1039",
+        "cep": "01039-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1024",
+        "cep": "01024-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1009",
+        "cep": "01009-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1020",
+        "cep": "01020-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1043",
+        "cep": "01043-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1050",
+        "cep": "01050-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1045",
+        "cep": "01045-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1007",
+        "cep": "01007-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1005",
+        "cep": "01005-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1017",
+        "cep": "01017-000",
+        "bairro": "Brás",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1019",
+        "cep": "01019-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1027",
+        "cep": "01027-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1033",
+        "cep": "01033-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1006",
+        "cep": "01006-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1034",
+        "cep": "01034-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1042",
+        "cep": "01042-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1040",
+        "cep": "01040-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1026",
+        "cep": "01026-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1036",
+        "cep": "01036-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1048",
+        "cep": "01048-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1002",
+        "cep": "01002-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1031",
+        "cep": "01031-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1022",
+        "cep": "01022-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1008",
+        "cep": "01008-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1010",
+        "cep": "01010-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1003",
+        "cep": "01003-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1001",
+        "cep": "01001-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1015",
+        "cep": "01015-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1038",
+        "cep": "01038-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1016",
+        "cep": "01016-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1049",
+        "cep": "01049-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1021",
+        "cep": "01021-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1018",
+        "cep": "01018-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1044",
+        "cep": "01044-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1030",
+        "cep": "01030-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1025",
+        "cep": "01025-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1004",
+        "cep": "01004-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1023",
+        "cep": "01023-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1028",
+        "cep": "01028-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1155",
+        "cep": "01155-000",
+        "bairro": "Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1122",
+        "cep": "01122-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1150",
+        "cep": "01150-000",
+        "bairro": "Santa Cecília",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1123",
+        "cep": "01123-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1139",
+        "cep": "01139-000",
+        "bairro": "Várzea da Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1153",
+        "cep": "01153-000",
+        "bairro": "Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1104",
+        "cep": "01104-000",
+        "bairro": "Luz",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1136",
+        "cep": "01136-000",
+        "bairro": "Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1130",
+        "cep": "01130-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1103",
+        "cep": "01103-000",
+        "bairro": "Luz",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1156",
+        "cep": "01156-000",
+        "bairro": "Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1151",
+        "cep": "01151-000",
+        "bairro": "Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1140",
+        "cep": "01140-000",
+        "bairro": "Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1120",
+        "cep": "01120-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1106",
+        "cep": "01106-000",
+        "bairro": "Luz",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1124",
+        "cep": "01124-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1131",
+        "cep": "01131-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1121",
+        "cep": "01121-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1141",
+        "cep": "01141-000",
+        "bairro": "Várzea da Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1125",
+        "cep": "01125-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1102",
+        "cep": "01102-000",
+        "bairro": "Luz",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1127",
+        "cep": "01127-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1137",
+        "cep": "01137-000",
+        "bairro": "Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1135",
+        "cep": "01135-000",
+        "bairro": "Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1138",
+        "cep": "01138-000",
+        "bairro": "Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1128",
+        "cep": "01128-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1109",
+        "cep": "01109-000",
+        "bairro": "Canindé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1132",
+        "cep": "01132-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1108",
+        "cep": "01108-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1107",
+        "cep": "01107-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1154",
+        "cep": "01154-000",
+        "bairro": "Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1152",
+        "cep": "01152-000",
+        "bairro": "Barra Funda",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1134",
+        "cep": "01134-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1144",
+        "cep": "01144-000",
+        "bairro": "Parque Industrial Tomas Edson",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1129",
+        "cep": "01129-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1105",
+        "cep": "01105-000",
+        "bairro": "Brás",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1126",
+        "cep": "01126-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1142",
+        "cep": "01142-000",
+        "bairro": "Parque Industrial Tomas Edson",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1133",
+        "cep": "01133-000",
+        "bairro": "Bom Retiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1101",
+        "cep": "01101-000",
+        "bairro": "Luz",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1189",
+        "cep": "01189000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "1202",
+        "cep": "01202-000",
+        "bairro": "Campos Elíseos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1230",
+        "cep": "01230-000",
+        "bairro": "Santa Cecília",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1221",
+        "cep": "01221-000",
+        "bairro": "Vila Buarque",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1217",
+        "cep": "01217-000",
+        "bairro": "Campos Elíseos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1243",
+        "cep": "01243-000",
+        "bairro": "Consolação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1203",
+        "cep": "01203-000",
+        "bairro": "Campos Elíseos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1214",
+        "cep": "01214-000",
+        "bairro": "Santa Efigênia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1257",
+        "cep": "01257-000",
+        "bairro": "Sumaré",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1231",
+        "cep": "01231-000",
+        "bairro": "Santa Cecília",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1216",
+        "cep": "01216-000",
+        "bairro": "Campos Elíseos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1226",
+        "cep": "01226-000",
+        "bairro": "Vila Buarque",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1220",
+        "cep": "01220-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1223",
+        "cep": "01223-000",
+        "bairro": "Vila Buarque",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1213",
+        "cep": "01213-000",
+        "bairro": "Santa Efigênia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1227",
+        "cep": "01227-000",
+        "bairro": "Santa Cecília",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1240",
+        "cep": "01240-000",
+        "bairro": "Higienópolis",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1258",
+        "cep": "01258-000",
+        "bairro": "Sumaré",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1222",
+        "cep": "01222-000",
+        "bairro": "Vila Buarque",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1211",
+        "cep": "01211-000",
+        "bairro": "Santa Cecília",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1244",
+        "cep": "01244-000",
+        "bairro": "Higienópolis",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1238",
+        "cep": "01238-000",
+        "bairro": "Higienópolis",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1204",
+        "cep": "01204-000",
+        "bairro": "Campos Elíseos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1234",
+        "cep": "01234-000",
+        "bairro": "Pacaembu",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1228",
+        "cep": "01228-000",
+        "bairro": "Santa Cecília",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1224",
+        "cep": "01224-000",
+        "bairro": "Vila Buarque",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1229",
+        "cep": "01229-000",
+        "bairro": "Santa Cecília",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1232",
+        "cep": "01232-000",
+        "bairro": "Santa Cecília",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1218",
+        "cep": "01218-000",
+        "bairro": "Campos Elíseos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1215",
+        "cep": "01215-000",
+        "bairro": "Campos Elíseos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1239",
+        "cep": "01239-000",
+        "bairro": "Higienópolis",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1205",
+        "cep": "01205-000",
+        "bairro": "Campos Elíseos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1201",
+        "cep": "01201-000",
+        "bairro": "Campos Elíseos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1259",
+        "cep": "01259-000",
+        "bairro": "Sumaré",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1210",
+        "cep": "01210-000",
+        "bairro": "Santa Efigênia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1249",
+        "cep": "01249-000",
+        "bairro": "Pacaembu",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1212",
+        "cep": "01212000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "1248",
+        "cep": "01248-000",
+        "bairro": "Pacaembu",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1233",
+        "cep": "01233-000",
+        "bairro": "Santa Cecília",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1219",
+        "cep": "01219-000",
+        "bairro": "República",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1235",
+        "cep": "01235-000",
+        "bairro": "Pacaembu",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1209",
+        "cep": "01209-000",
+        "bairro": "Santa Efigênia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1236",
+        "cep": "01236-000",
+        "bairro": "Pacaembu",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1206",
+        "cep": "01206-000",
+        "bairro": "Campos Elíseos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1207",
+        "cep": "01207-000",
+        "bairro": "Santa Efigênia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1251",
+        "cep": "01251-000",
+        "bairro": "Sumaré",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1242",
+        "cep": "01242-000",
+        "bairro": "Higienópolis",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1241",
+        "cep": "01241-000",
+        "bairro": "Higienópolis",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1208",
+        "cep": "01208-000",
+        "bairro": "Santa Efigênia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1254",
+        "cep": "01254-000",
+        "bairro": "Sumaré",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1255",
+        "cep": "01255-000",
+        "bairro": "Sumaré",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1245",
+        "cep": "01245-000",
+        "bairro": "Pacaembu",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1225",
+        "cep": "01225-000",
+        "bairro": "Vila Buarque",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1252",
+        "cep": "01252-000",
+        "bairro": "Sumaré",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1237",
+        "cep": "01237-000",
+        "bairro": "Pacaembu",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1200",
+        "cep": "01200000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "1250",
+        "cep": "01250-000",
+        "bairro": "Pacaembu",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1247",
+        "cep": "01247-000",
+        "bairro": "Pacaembu",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1246",
+        "cep": "01246-000",
+        "bairro": "Pacaembu",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1262",
+        "cep": "01262000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "1253",
+        "cep": "01253-000",
+        "bairro": "Sumaré",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1290",
+        "cep": "01290000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "1256",
+        "cep": "01256-000",
+        "bairro": "Sumaré",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1303",
+        "cep": "01303-000",
+        "bairro": "Consolação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1309",
+        "cep": "01309-000",
+        "bairro": "Consolação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1310",
+        "cep": "01310-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1323",
+        "cep": "01323-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1321",
+        "cep": "01321-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1333",
+        "cep": "01333-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1314",
+        "cep": "01314-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1331",
+        "cep": "01331-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1307",
+        "cep": "01307-000",
+        "bairro": "Consolação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1318",
+        "cep": "01318-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1322",
+        "cep": "01322-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1308",
+        "cep": "01308-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1306",
+        "cep": "01306-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1301",
+        "cep": "01301-000",
+        "bairro": "Consolação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1302",
+        "cep": "01302-000",
+        "bairro": "Consolação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1312",
+        "cep": "01312-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1319",
+        "cep": "01319-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1316",
+        "cep": "01316-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1317",
+        "cep": "01317-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1313",
+        "cep": "01313-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1324",
+        "cep": "01324-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1327",
+        "cep": "01327-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1304",
+        "cep": "01304-000",
+        "bairro": "Consolação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1332",
+        "cep": "01332-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1326",
+        "cep": "01326-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1315",
+        "cep": "01315-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1325",
+        "cep": "01325-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1329",
+        "cep": "01329-000",
+        "bairro": "Morro dos Ingleses",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1330",
+        "cep": "01330-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1311",
+        "cep": "01311-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1305",
+        "cep": "01305-000",
+        "bairro": "Consolação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1320",
+        "cep": "01320-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1328",
+        "cep": "01328-000",
+        "bairro": "Bela Vista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1402",
+        "cep": "01402-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1421",
+        "cep": "01421-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1403",
+        "cep": "01403-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1409",
+        "cep": "01409-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1411",
+        "cep": "01411-000",
+        "bairro": "Cerqueira César",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1452",
+        "cep": "01452-000",
+        "bairro": "Jardim Paulistano",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1423",
+        "cep": "01423-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1417",
+        "cep": "01417000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "1408",
+        "cep": "01408-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1455",
+        "cep": "01455-000",
+        "bairro": "Jardim Europa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1401",
+        "cep": "01401-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1410",
+        "cep": "01410-000",
+        "bairro": "Cerqueira César",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1453",
+        "cep": "01453-000",
+        "bairro": "Itaim Bibi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1415",
+        "cep": "01415-000",
+        "bairro": "Consolação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1416",
+        "cep": "01416-000",
+        "bairro": "Cerqueira César",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1445",
+        "cep": "01445-000",
+        "bairro": "Jardim Paulistano",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1424",
+        "cep": "01424-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1422",
+        "cep": "01422-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1419",
+        "cep": "01419-000",
+        "bairro": "Cerqueira César",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1414",
+        "cep": "01414-000",
+        "bairro": "Cerqueira César",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1420",
+        "cep": "01420-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1451",
+        "cep": "01451-000",
+        "bairro": "Jardim Paulistano",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1446",
+        "cep": "01446-000",
+        "bairro": "Jardim Europa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1406",
+        "cep": "01406-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1454",
+        "cep": "01454-000",
+        "bairro": "Jardim Paulistano",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1426",
+        "cep": "01426-000",
+        "bairro": "Cerqueira César",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1413",
+        "cep": "01413-000",
+        "bairro": "Cerqueira César",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1433",
+        "cep": "01433-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1427",
+        "cep": "01427-000",
+        "bairro": "Jardim América",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1405",
+        "cep": "01405-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1435",
+        "cep": "01435-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1449",
+        "cep": "01449-000",
+        "bairro": "Jardim Europa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1425",
+        "cep": "01425-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1430",
+        "cep": "01430-000",
+        "bairro": "Jardim América",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1404",
+        "cep": "01404-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1442",
+        "cep": "01442-000",
+        "bairro": "Jardim América",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1407",
+        "cep": "01407-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1418",
+        "cep": "01418-000",
+        "bairro": "Cerqueira César",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1472",
+        "cep": "01472000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "1443",
+        "cep": "01443-000",
+        "bairro": "Jardim Paulistano",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1428",
+        "cep": "01428-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1434",
+        "cep": "01434-000",
+        "bairro": "Jardim América",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1457",
+        "cep": "01457-000",
+        "bairro": "Jardim Paulistano",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1412",
+        "cep": "01412-000",
+        "bairro": "Cerqueira César",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1448",
+        "cep": "01448-000",
+        "bairro": "Jardim Europa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1456",
+        "cep": "01456-000",
+        "bairro": "Jardim Europa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1432",
+        "cep": "01432-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1441",
+        "cep": "01441-000",
+        "bairro": "Jardim América",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1489",
+        "cep": "01489000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "1429",
+        "cep": "01429-000",
+        "bairro": "Jardim Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1450",
+        "cep": "01450-000",
+        "bairro": "Jardim Europa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1440",
+        "cep": "01440-000",
+        "bairro": "Jardim América",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1438",
+        "cep": "01438-000",
+        "bairro": "Jardim América",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1444",
+        "cep": "01444-000",
+        "bairro": "Jardim Paulistano",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1436",
+        "cep": "01436-000",
+        "bairro": "Jardim América",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1447",
+        "cep": "01447-000",
+        "bairro": "Jardim Europa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1439",
+        "cep": "01439-000",
+        "bairro": "Jardim América",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1431",
+        "cep": "01431-000",
+        "bairro": "Jardim América",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1437",
+        "cep": "01437-000",
+        "bairro": "Jardim América",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1526",
+        "cep": "01526-000",
+        "bairro": "Aclimação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1509",
+        "cep": "01509-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1504",
+        "cep": "01504-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1536",
+        "cep": "01536-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1535",
+        "cep": "01535-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1511",
+        "cep": "01511-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1534",
+        "cep": "01534-000",
+        "bairro": "Aclimação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1514",
+        "cep": "01514-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1529",
+        "cep": "01529-000",
+        "bairro": "Aclimação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1539",
+        "cep": "01539-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1532",
+        "cep": "01532-000",
+        "bairro": "Aclimação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1542",
+        "cep": "01542-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1548",
+        "cep": "01548-000",
+        "bairro": "Vila Monumento",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1543",
+        "cep": "01543-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1544",
+        "cep": "01544-000",
+        "bairro": "Vila Deodoro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1546",
+        "cep": "01546-000",
+        "bairro": "Jardim da Glória",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1523",
+        "cep": "01523-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1506",
+        "cep": "01506-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1518",
+        "cep": "01518-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1510",
+        "cep": "01510-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1537",
+        "cep": "01537-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1531",
+        "cep": "01531-000",
+        "bairro": "Aclimação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1549",
+        "cep": "01549-000",
+        "bairro": "Vila Monumento",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1533",
+        "cep": "01533-000",
+        "bairro": "Aclimação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1525",
+        "cep": "01525-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1520",
+        "cep": "01520-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1550",
+        "cep": "01550-000",
+        "bairro": "Vila Monumento",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1503",
+        "cep": "01503-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1541",
+        "cep": "01541-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1545",
+        "cep": "01545-000",
+        "bairro": "Jardim da Glória",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1522",
+        "cep": "01522-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1508",
+        "cep": "01508-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1519",
+        "cep": "01519-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1547",
+        "cep": "01547-000",
+        "bairro": "Jardim da Glória",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1538",
+        "cep": "01538-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1501",
+        "cep": "01501-000",
+        "bairro": "Centro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1521",
+        "cep": "01521-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1530",
+        "cep": "01530-000",
+        "bairro": "Aclimação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1505",
+        "cep": "01505-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1502",
+        "cep": "01502-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1551",
+        "cep": "01551-000",
+        "bairro": "Vila Monumento",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1540",
+        "cep": "01540-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1528",
+        "cep": "01528-000",
+        "bairro": "Aclimação",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1513",
+        "cep": "01513-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1527",
+        "cep": "01527-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1524",
+        "cep": "01524-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1507",
+        "cep": "01507-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1512",
+        "cep": "01512-000",
+        "bairro": "Sé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1552",
+        "cep": "01552-000",
+        "bairro": "Vila Monumento",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1553",
+        "cep": "01553-000",
+        "bairro": "Vila Monumento",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1516",
+        "cep": "01516-000",
+        "bairro": "Cambuci",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "1517",
+        "cep": "01517-000",
+        "bairro": "Liberdade",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2019",
+        "cep": "02019-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2069",
+        "cep": "02069-000",
+        "bairro": "Carandiru",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2067",
+        "cep": "02067-000",
+        "bairro": "Carandiru",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2020",
+        "cep": "02020-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2075",
+        "cep": "02075-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2012",
+        "cep": "02012-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2076",
+        "cep": "02076-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2035",
+        "cep": "02035-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2034",
+        "cep": "02034-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2022",
+        "cep": "02022-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2021",
+        "cep": "02021-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2080",
+        "cep": "02080-000",
+        "bairro": "Vila Isolina Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2066",
+        "cep": "02066-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2085",
+        "cep": "02085-000",
+        "bairro": "Jardim São Paulo(Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2030",
+        "cep": "02030-000",
+        "bairro": "Canindé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2064",
+        "cep": "02064-000",
+        "bairro": "Parque Veloso",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2029",
+        "cep": "02029-000",
+        "bairro": "Carandiru",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2060",
+        "cep": "02060-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2054",
+        "cep": "02054000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2072",
+        "cep": "02072-000",
+        "bairro": "Carandiru",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2017",
+        "cep": "02017-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2018",
+        "cep": "02018-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2043",
+        "cep": "02043-000",
+        "bairro": "Jardim São Paulo(Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2074",
+        "cep": "02074-000",
+        "bairro": "Vila Paiva",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2038",
+        "cep": "02038-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2016",
+        "cep": "02016-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2040",
+        "cep": "02040-000",
+        "bairro": "Jardim São Paulo(Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2056",
+        "cep": "02056-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2051",
+        "cep": "02051-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2041",
+        "cep": "02041-000",
+        "bairro": "Jardim São Paulo(Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2039",
+        "cep": "02039-000",
+        "bairro": "Jardim São Paulo(Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2073",
+        "cep": "02073-000",
+        "bairro": "Vila Paiva",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2082",
+        "cep": "02082-000",
+        "bairro": "Vila Isolina Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2033",
+        "cep": "02033-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2013",
+        "cep": "02013-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2079",
+        "cep": "02079-000",
+        "bairro": "Vila Isolina Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2037",
+        "cep": "02037-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2083",
+        "cep": "02083-000",
+        "bairro": "Vila Isolina Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2068",
+        "cep": "02068-000",
+        "bairro": "Carandiru",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2071",
+        "cep": "02071-000",
+        "bairro": "Carandiru",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2047",
+        "cep": "02047-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2078",
+        "cep": "02078-000",
+        "bairro": "Vila Leonor",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2044",
+        "cep": "02044-000",
+        "bairro": "Jardim São Paulo(Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2084",
+        "cep": "02084-000",
+        "bairro": "Vila Isolina Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2055",
+        "cep": "02055-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2042",
+        "cep": "02042-000",
+        "bairro": "Jardim São Paulo(Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2045",
+        "cep": "02045-000",
+        "bairro": "Jardim São Paulo(Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2036",
+        "cep": "02036-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2046",
+        "cep": "02046000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2010",
+        "cep": "02010-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2081",
+        "cep": "02081-000",
+        "bairro": "Vila Isolina Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2050",
+        "cep": "02050-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2052",
+        "cep": "02052-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2031",
+        "cep": "02031-000",
+        "bairro": "Canindé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2028",
+        "cep": "02028-000",
+        "bairro": "Carandiru",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2065",
+        "cep": "02065-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2077",
+        "cep": "02077-000",
+        "bairro": "Vila Leonor",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2011",
+        "cep": "02011-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2049",
+        "cep": "02049-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2032",
+        "cep": "02032-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2053",
+        "cep": "02053-000",
+        "bairro": "Vila Guilherme",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2009",
+        "cep": "02009000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2089",
+        "cep": "02089000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2088",
+        "cep": "02088-000",
+        "bairro": "Carandiru",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2150",
+        "cep": "02150-000",
+        "bairro": "Jardim Guanca",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2133",
+        "cep": "02133-000",
+        "bairro": "Vila Maria Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2167",
+        "cep": "02167-000",
+        "bairro": "Jardim Andaraí",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2130",
+        "cep": "02130-000",
+        "bairro": "Vila Maria Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2188",
+        "cep": "02188-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2152",
+        "cep": "02152-000",
+        "bairro": "Jardim Guanca",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2138",
+        "cep": "02138-000",
+        "bairro": "Vila Sabrina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2134",
+        "cep": "02134-000",
+        "bairro": "Vila Maria Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2176",
+        "cep": "02176-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2117",
+        "cep": "02117-000",
+        "bairro": "Vila Maria Baixa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2119",
+        "cep": "02119-000",
+        "bairro": "Vila Maria Baixa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2131",
+        "cep": "02131-000",
+        "bairro": "Vila Maria Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2124",
+        "cep": "02124-000",
+        "bairro": "Jardim Japão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2129",
+        "cep": "02129-000",
+        "bairro": "Vila Maria Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2132",
+        "cep": "02132-000",
+        "bairro": "Jardim Japão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2110",
+        "cep": "02110-000",
+        "bairro": "Vila Maria Baixa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2135",
+        "cep": "02135-000",
+        "bairro": "Jardim Japão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2127",
+        "cep": "02127-000",
+        "bairro": "Vila Maria Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2114",
+        "cep": "02114-000",
+        "bairro": "Vila Maria Baixa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2178",
+        "cep": "02178-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2177",
+        "cep": "02177-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2120",
+        "cep": "02120-000",
+        "bairro": "Vila Maria Baixa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2161",
+        "cep": "02161-000",
+        "bairro": "Jardim Guanca",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2112",
+        "cep": "02112-000",
+        "bairro": "Vila Maria Baixa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2126",
+        "cep": "02126-000",
+        "bairro": "Vila Maria Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2169",
+        "cep": "02169-000",
+        "bairro": "Jardim Andaraí",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2123",
+        "cep": "02123-000",
+        "bairro": "Jardim Japão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2189",
+        "cep": "02189-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2128",
+        "cep": "02128-000",
+        "bairro": "Vila Maria Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2179",
+        "cep": "02179-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2136",
+        "cep": "02136-000",
+        "bairro": "Vila Maria Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2174",
+        "cep": "02174-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2186",
+        "cep": "02186-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2137",
+        "cep": "02137-000",
+        "bairro": "Jardim Japão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2185",
+        "cep": "02185-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2181",
+        "cep": "02181-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2180",
+        "cep": "02180-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2111",
+        "cep": "02111-000",
+        "bairro": "Vila Maria Baixa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2187",
+        "cep": "02187-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2121",
+        "cep": "02121-000",
+        "bairro": "Vila Maria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2190",
+        "cep": "02190-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2139",
+        "cep": "02139-000",
+        "bairro": "Vila Sabrina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2143",
+        "cep": "02143-000",
+        "bairro": "Jardim Japão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2122",
+        "cep": "02122000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2115",
+        "cep": "02115-000",
+        "bairro": "Vila Maria Baixa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2118",
+        "cep": "02118-000",
+        "bairro": "Vila Maria Baixa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2125",
+        "cep": "02125-000",
+        "bairro": "Vila Maria Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2113",
+        "cep": "02113-000",
+        "bairro": "Vila Maria Baixa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2147",
+        "cep": "02147-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2141",
+        "cep": "02141-000",
+        "bairro": "Vila Sabrina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2170",
+        "cep": "02170-000",
+        "bairro": "Vila Maria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2166",
+        "cep": "02166-000",
+        "bairro": "Jardim Andaraí",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2175",
+        "cep": "02175-000",
+        "bairro": "Jardim Andaraí",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2168",
+        "cep": "02168-000",
+        "bairro": "Jardim Andaraí",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2116",
+        "cep": "02116-000",
+        "bairro": "Vila Maria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2145",
+        "cep": "02145-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2151",
+        "cep": "02151-000",
+        "bairro": "Jardim Guanca",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2146",
+        "cep": "02146-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2144",
+        "cep": "02144-000",
+        "bairro": "Parque Novo Mundo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2162",
+        "cep": "02162000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2142",
+        "cep": "02142-000",
+        "bairro": "Jardim Japão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2251",
+        "cep": "02251-000",
+        "bairro": "Vila Nivi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2256",
+        "cep": "02256-000",
+        "bairro": "Vila Constança",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2246",
+        "cep": "02246-000",
+        "bairro": "Vila Dom Pedro II",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2223",
+        "cep": "02223-000",
+        "bairro": "Jardim Brasil (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2225",
+        "cep": "02225-000",
+        "bairro": "Jardim Brasil (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2204",
+        "cep": "02204-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2235",
+        "cep": "02235-000",
+        "bairro": "Jardim Brasil (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2245",
+        "cep": "02245-000",
+        "bairro": "Parada Inglesa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2243",
+        "cep": "02243-000",
+        "bairro": "Vila Dom Pedro II",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2208",
+        "cep": "02208-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2222",
+        "cep": "02222-000",
+        "bairro": "Jardim Brasil (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2232",
+        "cep": "02232-000",
+        "bairro": "Parque Edu Chaves",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2203",
+        "cep": "02203-000",
+        "bairro": "Vila Ede",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2250",
+        "cep": "02250-000",
+        "bairro": "Vila Gustavo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2263",
+        "cep": "02263-000",
+        "bairro": "Vila Nova Carolina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2238",
+        "cep": "02238-000",
+        "bairro": "Jardim Modelo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2261",
+        "cep": "02261-000",
+        "bairro": "Jardim Modelo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2267",
+        "cep": "02267-000",
+        "bairro": "Vila Gustavo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2270",
+        "cep": "02270-000",
+        "bairro": "Parque Vitória",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2227",
+        "cep": "02227-000",
+        "bairro": "Jardim Brasil (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2273",
+        "cep": "02273-000",
+        "bairro": "Jaçanã",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2244",
+        "cep": "02244-000",
+        "bairro": "Vila Dom Pedro II",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2229",
+        "cep": "02229-000",
+        "bairro": "Parque Edu Chaves",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2215",
+        "cep": "02215-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2259",
+        "cep": "02259-000",
+        "bairro": "Vila Constança",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2228",
+        "cep": "02228-000",
+        "bairro": "Parque Edu Chaves",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2254",
+        "cep": "02254-000",
+        "bairro": "Vila Nivi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2218",
+        "cep": "02218-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2247",
+        "cep": "02247-000",
+        "bairro": "Parada Inglesa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2226",
+        "cep": "02226-000",
+        "bairro": "Jardim Brasil (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2274",
+        "cep": "02274-000",
+        "bairro": "Jaçanã",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2220",
+        "cep": "02220-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2217",
+        "cep": "02217-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2265",
+        "cep": "02265-000",
+        "bairro": "Tucuruvi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2276",
+        "cep": "02276-000",
+        "bairro": "Guapira",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2242",
+        "cep": "02242-000",
+        "bairro": "Parada Inglesa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2269",
+        "cep": "02269-000",
+        "bairro": "Parque Vitória",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2221",
+        "cep": "02221-000",
+        "bairro": "Jardim Brasil (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2279",
+        "cep": "02279-000",
+        "bairro": "Vila Nilo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2249",
+        "cep": "02249-000",
+        "bairro": "Vila Gustavo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2237",
+        "cep": "02237-000",
+        "bairro": "Jardim Modelo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2206",
+        "cep": "02206-000",
+        "bairro": "Vila Gustavo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2258",
+        "cep": "02258-000",
+        "bairro": "Vila Constança",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2236",
+        "cep": "02236-000",
+        "bairro": "Parque Edu Chaves",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2205",
+        "cep": "02205-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2241",
+        "cep": "02241-000",
+        "bairro": "Vila Dom Pedro II",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2219",
+        "cep": "02219-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2257",
+        "cep": "02257-000",
+        "bairro": "Vila Constança",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2230",
+        "cep": "02230-000",
+        "bairro": "Parque Edu Chaves",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2210",
+        "cep": "02210-000",
+        "bairro": "Jardim Brasil (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2266",
+        "cep": "02266-000",
+        "bairro": "Vila Gustavo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2211",
+        "cep": "02211-000",
+        "bairro": "Vila Ede",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2280",
+        "cep": "02280-000",
+        "bairro": "Vila Nova Galvão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2278",
+        "cep": "02278-000",
+        "bairro": "Vila Nilo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2264",
+        "cep": "02264-000",
+        "bairro": "Vila Nova Carolina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2201",
+        "cep": "02201-000",
+        "bairro": "Vila Gustavo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2253",
+        "cep": "02253-000",
+        "bairro": "Vila Gustavo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2281",
+        "cep": "02281-000",
+        "bairro": "Vila Nova Galvão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2248",
+        "cep": "02248-000",
+        "bairro": "Parada Inglesa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2255",
+        "cep": "02255-000",
+        "bairro": "Vila Nivi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2277",
+        "cep": "02277-000",
+        "bairro": "Vila Nilo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2272",
+        "cep": "02272-000",
+        "bairro": "Jaçanã",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2271",
+        "cep": "02271-000",
+        "bairro": "Vila Santa Terezinha (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2282",
+        "cep": "02282-000",
+        "bairro": "Jardim São Luís (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2224",
+        "cep": "02224-000",
+        "bairro": "Jardim Brasil (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2275",
+        "cep": "02275-000",
+        "bairro": "Vila Germinal",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2233",
+        "cep": "02233-000",
+        "bairro": "Parque Edu Chaves",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2209",
+        "cep": "02209-000",
+        "bairro": "Vila Gustavo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2212",
+        "cep": "02212-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2288",
+        "cep": "02288-000",
+        "bairro": "Vila Ayrosa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2260",
+        "cep": "02260-000",
+        "bairro": "Vila Constança",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2234",
+        "cep": "02234-000",
+        "bairro": "Jardim Brasil (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2213",
+        "cep": "02213-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2202",
+        "cep": "02202-000",
+        "bairro": "Vila Ede",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2262",
+        "cep": "02262-000",
+        "bairro": "Jardim Modelo",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2216",
+        "cep": "02216-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2214",
+        "cep": "02214-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2268",
+        "cep": "02268-000",
+        "bairro": "Parque Vitória",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2207",
+        "cep": "02207-000",
+        "bairro": "Vila Medeiros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2239",
+        "cep": "02239-000",
+        "bairro": "Parada Inglesa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2252",
+        "cep": "02252-000",
+        "bairro": "Vila Nivi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2240",
+        "cep": "02240-000",
+        "bairro": "Parada Inglesa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2231",
+        "cep": "02231-000",
+        "bairro": "Parque Edu Chaves",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2290",
+        "cep": "02290-000",
+        "bairro": "Flor da Cantareira",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2284",
+        "cep": "02284-000",
+        "bairro": "Parque Edu Chaves",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2289",
+        "cep": "02289-000",
+        "bairro": "Furnas",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2286",
+        "cep": "02286-000",
+        "bairro": "Sítio Barrocada",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2309",
+        "cep": "02309-000",
+        "bairro": "Vila Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2377",
+        "cep": "02377-000",
+        "bairro": "Horto Florestal",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2371",
+        "cep": "02371-000",
+        "bairro": "Vila Albertina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2323",
+        "cep": "02323-000",
+        "bairro": "Parque Casa de Pedra",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2311",
+        "cep": "02311-000",
+        "bairro": "Vila Cachoeira",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2374",
+        "cep": "02374-000",
+        "bairro": "Vila Irmãos Arnoni",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2316",
+        "cep": "02316-000",
+        "bairro": "Vila Nova Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2366",
+        "cep": "02366-000",
+        "bairro": "Jardim Francisco Mendes",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2321",
+        "cep": "02321000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2315",
+        "cep": "02315-000",
+        "bairro": "Vila Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2330",
+        "cep": "02330-000",
+        "bairro": "Tucuruvi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2319",
+        "cep": "02319-000",
+        "bairro": "Parque Casa de Pedra",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2312",
+        "cep": "02312-000",
+        "bairro": "Vila Nova Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2341",
+        "cep": "02341-000",
+        "bairro": "Tucuruvi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2334",
+        "cep": "02334-000",
+        "bairro": "Água Fria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2347",
+        "cep": "02347-000",
+        "bairro": "Jardim Leonor Mendes de Barros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2365",
+        "cep": "02365-000",
+        "bairro": "Jardim São João (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2375",
+        "cep": "02375-000",
+        "bairro": "Vila Irmãos Arnoni",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2372",
+        "cep": "02372-000",
+        "bairro": "Tremembé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2367",
+        "cep": "02367-000",
+        "bairro": "Jardim das Pedras",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2343",
+        "cep": "02343-000",
+        "bairro": "Vila Cachoeira",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2306",
+        "cep": "02306-000",
+        "bairro": "Tucuruvi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2313",
+        "cep": "02313-000",
+        "bairro": "Vila Nova Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2305",
+        "cep": "02305-000",
+        "bairro": "Tucuruvi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2340",
+        "cep": "02340-000",
+        "bairro": "Tucuruvi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2360",
+        "cep": "02360000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2344",
+        "cep": "02344-000",
+        "bairro": "Barro Branco (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2348",
+        "cep": "02348-000",
+        "bairro": "Jardim Leonor Mendes de Barros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2322",
+        "cep": "02322-000",
+        "bairro": "Vila Dorna",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2356",
+        "cep": "02356-000",
+        "bairro": "Jardim Virginia Bianca",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2352",
+        "cep": "02352-000",
+        "bairro": "Bortolândia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2358",
+        "cep": "02358-000",
+        "bairro": "Jardim Santo Alberto",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2308",
+        "cep": "02308-000",
+        "bairro": "Vila Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2318",
+        "cep": "02318-000",
+        "bairro": "Sítio do Piqueri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2337",
+        "cep": "02337-000",
+        "bairro": "Jardim Franca",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2342",
+        "cep": "02342-000",
+        "bairro": "Tucuruvi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2355",
+        "cep": "02355-000",
+        "bairro": "Jardim Virginia Bianca",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2303",
+        "cep": "02303-000",
+        "bairro": "Tucuruvi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2363",
+        "cep": "02363-000",
+        "bairro": "Jardim Flor de Maio",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2324",
+        "cep": "02324-000",
+        "bairro": "Jardim Ataliba Leonel",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2373",
+        "cep": "02373-000",
+        "bairro": "Vila Albertina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2302",
+        "cep": "02302-000",
+        "bairro": "Vila Paulicéia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2350",
+        "cep": "02350-000",
+        "bairro": "Vila Albertina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2378",
+        "cep": "02378-000",
+        "bairro": "Horto Florestal",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2317",
+        "cep": "02317-000",
+        "bairro": "Vila Nova Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2351",
+        "cep": "02351-000",
+        "bairro": "Parque Casa de Pedra",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2301",
+        "cep": "02301-000",
+        "bairro": "Vila Paulicéia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2332",
+        "cep": "02332-000",
+        "bairro": "Água Fria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2376",
+        "cep": "02376-000",
+        "bairro": "Vila Rosa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2326",
+        "cep": "02326-000",
+        "bairro": "Jardim Felicidade (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2335",
+        "cep": "02335-000",
+        "bairro": "Água Fria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2346",
+        "cep": "02346-000",
+        "bairro": "Jardim Leonor Mendes de Barros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2362",
+        "cep": "02362-000",
+        "bairro": "Jardim Campo Limpo (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2357",
+        "cep": "02357-000",
+        "bairro": "Tremembé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2329",
+        "cep": "02329-000",
+        "bairro": "Jardim Hebrom",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2314",
+        "cep": "02314-000",
+        "bairro": "Vila Nova Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2310",
+        "cep": "02310-000",
+        "bairro": "Vila Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2325",
+        "cep": "02325-000",
+        "bairro": "Jardim Filhos da Terra",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2354",
+        "cep": "02354-000",
+        "bairro": "Parque Ramos Freitas",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2320",
+        "cep": "02320-000",
+        "bairro": "Parque Casa de Pedra",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2361",
+        "cep": "02361000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2338",
+        "cep": "02338-000",
+        "bairro": "Jardim Franca",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2331",
+        "cep": "02331-000",
+        "bairro": "Tucuruvi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2333",
+        "cep": "02333-000",
+        "bairro": "Água Fria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2307",
+        "cep": "02307-000",
+        "bairro": "Tucuruvi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2349",
+        "cep": "02349-000",
+        "bairro": "Jardim Leonor Mendes de Barros",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2353",
+        "cep": "02353-000",
+        "bairro": "Parque Ramos Freitas",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2336",
+        "cep": "02336-000",
+        "bairro": "Água Fria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2339",
+        "cep": "02339-000",
+        "bairro": "Jardim Franca",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2368",
+        "cep": "02368-000",
+        "bairro": "Núcleo do Engordador",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2370",
+        "cep": "02370-000",
+        "bairro": "Vila Albertina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2328",
+        "cep": "02328000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2359",
+        "cep": "02359-000",
+        "bairro": "Jardim Ibiratiba",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2345",
+        "cep": "02345-000",
+        "bairro": "Barro Branco (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2327",
+        "cep": "02327000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2364",
+        "cep": "02364-000",
+        "bairro": "Jardim Recanto Verde",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2304",
+        "cep": "02304-000",
+        "bairro": "Tucuruvi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2430",
+        "cep": "02430-000",
+        "bairro": "Lauzane Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2402",
+        "cep": "02402-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2442",
+        "cep": "02442-000",
+        "bairro": "Lauzane Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2409",
+        "cep": "02409-000",
+        "bairro": "Vila Vitório Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2467",
+        "cep": "02467-000",
+        "bairro": "Imirim",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2422",
+        "cep": "02422-000",
+        "bairro": "Parque Mandaqui",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2441",
+        "cep": "02441-000",
+        "bairro": "Lauzane Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2452",
+        "cep": "02452-000",
+        "bairro": "Vila Ester (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2435",
+        "cep": "02435-000",
+        "bairro": "Lauzane Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2464",
+        "cep": "02464-000",
+        "bairro": "Imirim",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2431",
+        "cep": "02431-000",
+        "bairro": "Jardim do Colégio (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2478",
+        "cep": "02478-000",
+        "bairro": "Vila Pita",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2436",
+        "cep": "02436-000",
+        "bairro": "Lauzane Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2473",
+        "cep": "02473-000",
+        "bairro": "Vila Roque",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2415",
+        "cep": "02415-000",
+        "bairro": "Parque Mandaqui",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2468",
+        "cep": "02468-000",
+        "bairro": "Vila Romero",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2401",
+        "cep": "02401-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2419",
+        "cep": "02419-000",
+        "bairro": "Conjunto Residencial Santa Terezinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2479",
+        "cep": "02479-000",
+        "bairro": "Vila Nova Cachoeirinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2471",
+        "cep": "02471-000",
+        "bairro": "Vila Basileia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2417",
+        "cep": "02417-000",
+        "bairro": "Jardim Paraíso",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2410",
+        "cep": "02410-000",
+        "bairro": "Vila Aurora (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2420",
+        "cep": "02420-000",
+        "bairro": "Parque Mandaqui",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2462",
+        "cep": "02462-000",
+        "bairro": "Chora Menino",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2461",
+        "cep": "02461-000",
+        "bairro": "Santa Teresinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2443",
+        "cep": "02443-000",
+        "bairro": "Lauzane Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2403",
+        "cep": "02403-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2466",
+        "cep": "02466-000",
+        "bairro": "Imirim",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2404",
+        "cep": "02404-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2433",
+        "cep": "02433-000",
+        "bairro": "Parque Mandaqui",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2406",
+        "cep": "02406-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2474",
+        "cep": "02474-000",
+        "bairro": "Vila Roque",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2434",
+        "cep": "02434-000",
+        "bairro": "Vila Guaca",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2407",
+        "cep": "02407-000",
+        "bairro": "Água Fria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2421",
+        "cep": "02421-000",
+        "bairro": "Parque Mandaqui",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2472",
+        "cep": "02472-000",
+        "bairro": "Imirim",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2470",
+        "cep": "02470-000",
+        "bairro": "Imirim",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2460",
+        "cep": "02460-000",
+        "bairro": "Santa Teresinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2475",
+        "cep": "02475-000",
+        "bairro": "Imirim",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2416",
+        "cep": "02416-000",
+        "bairro": "Jardim Paraíso",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2418",
+        "cep": "02418-000",
+        "bairro": "Parque Mandaqui",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2413",
+        "cep": "02413-000",
+        "bairro": "Imirim",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2451",
+        "cep": "02451-000",
+        "bairro": "Santa Teresinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2465",
+        "cep": "02465-000",
+        "bairro": "Imirim",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2405",
+        "cep": "02405-000",
+        "bairro": "Santana",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2469",
+        "cep": "02469-000",
+        "bairro": "Vila Romero",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2440",
+        "cep": "02440-000",
+        "bairro": "Lauzane Paulista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2408",
+        "cep": "02408-000",
+        "bairro": "Água Fria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2450",
+        "cep": "02450-000",
+        "bairro": "Santa Teresinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2411",
+        "cep": "02411-000",
+        "bairro": "Vila Aurora (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2432",
+        "cep": "02432-000",
+        "bairro": "Vila Mariza Mazzei",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2463",
+        "cep": "02463-000",
+        "bairro": "Chora Menino",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2423",
+        "cep": "02423-000",
+        "bairro": "Jardim Carlu",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2565",
+        "cep": "02565-000",
+        "bairro": "Casa Verde Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2542",
+        "cep": "02542-000",
+        "bairro": "Sítio do Mandaqui",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2522",
+        "cep": "02522-000",
+        "bairro": "Vila Baruel",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2536",
+        "cep": "02536-000",
+        "bairro": "Vila Ester (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2566",
+        "cep": "02566-000",
+        "bairro": "Vila Espanhola",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2519",
+        "cep": "02519-000",
+        "bairro": "Casa Verde",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2513",
+        "cep": "02513-000",
+        "bairro": "Casa Verde",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2550",
+        "cep": "02550-000",
+        "bairro": "Limão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2556",
+        "cep": "02556-000",
+        "bairro": "Vila Barbosa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2544",
+        "cep": "02544-000",
+        "bairro": "Casa Verde Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2543",
+        "cep": "02543-000",
+        "bairro": "Vila Celeste",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2560",
+        "cep": "02560-000",
+        "bairro": "Vila Santista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2517",
+        "cep": "02517-000",
+        "bairro": "Jardim das Laranjeiras",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2510",
+        "cep": "02510-000",
+        "bairro": "Vila Baruel",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2518",
+        "cep": "02518-000",
+        "bairro": "Jardim das Laranjeiras",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2554",
+        "cep": "02554-000",
+        "bairro": "Vila Diva (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2539",
+        "cep": "02539-000",
+        "bairro": "Parque Peruche",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2530",
+        "cep": "02530-000",
+        "bairro": "Casa Verde Média",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2535",
+        "cep": "02535-000",
+        "bairro": "Parque Peruche",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2537",
+        "cep": "02537-000",
+        "bairro": "Imirim",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2563",
+        "cep": "02563-000",
+        "bairro": "Vila Santa Maria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2561",
+        "cep": "02561-000",
+        "bairro": "Vila Santa Maria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2555",
+        "cep": "02555-000",
+        "bairro": "Casa Verde Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2564",
+        "cep": "02564-000",
+        "bairro": "Casa Verde Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2512",
+        "cep": "02512-000",
+        "bairro": "Casa Verde",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2534",
+        "cep": "02534-000",
+        "bairro": "Parque Peruche",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2525",
+        "cep": "02525-000",
+        "bairro": "Jardim São Bento",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2562",
+        "cep": "02562-000",
+        "bairro": "Vila Santa Maria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2520",
+        "cep": "02520-000",
+        "bairro": "Casa Verde",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2557",
+        "cep": "02557-000",
+        "bairro": "Vila Barbosa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2553",
+        "cep": "02553-000",
+        "bairro": "Sítio do Morro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2546",
+        "cep": "02546-000",
+        "bairro": "Limão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2516",
+        "cep": "02516-000",
+        "bairro": "Casa Verde",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2514",
+        "cep": "02514-000",
+        "bairro": "Casa Verde",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2552",
+        "cep": "02552-000",
+        "bairro": "Vila Bandeirantes",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2524",
+        "cep": "02524-000",
+        "bairro": "Jardim São Bento",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2540",
+        "cep": "02540-000",
+        "bairro": "Imirim",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2508",
+        "cep": "02508000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2558",
+        "cep": "02558-000",
+        "bairro": "Vila Prado",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2545",
+        "cep": "02545-000",
+        "bairro": "Casa Verde Alta",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2515",
+        "cep": "02515-000",
+        "bairro": "Casa Verde",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2531",
+        "cep": "02531-000",
+        "bairro": "Parque Peruche",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2526",
+        "cep": "02526-000",
+        "bairro": "Jardim São Bento",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2523",
+        "cep": "02523-000",
+        "bairro": "Vila Baruel",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2541",
+        "cep": "02541-000",
+        "bairro": "Imirim",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2567",
+        "cep": "02567-000",
+        "bairro": "Conjunto Habitacional Vila Nova Cachoeirinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2551",
+        "cep": "02551-000",
+        "bairro": "Sítio do Morro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2521",
+        "cep": "02521-000",
+        "bairro": "Casa Verde Média",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2533",
+        "cep": "02533-000",
+        "bairro": "Parque Peruche",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2511",
+        "cep": "02511-000",
+        "bairro": "Casa Verde",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2559",
+        "cep": "02559-000",
+        "bairro": "Vila Prado",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2532",
+        "cep": "02532-000",
+        "bairro": "Parque Peruche",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2538",
+        "cep": "02538-000",
+        "bairro": "Parque Peruche",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2598",
+        "cep": "02598000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2577",
+        "cep": "02577000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2501",
+        "cep": "02501-000",
+        "bairro": "Casa Verde Baixa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2610",
+        "cep": "02610-000",
+        "bairro": "Vila dos Andrades",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2676",
+        "cep": "02676-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2612",
+        "cep": "02612-000",
+        "bairro": "Vila Nova Cachoeirinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2632",
+        "cep": "02632-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2673",
+        "cep": "02673-000",
+        "bairro": "Vila Nova Cachoeirinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2616",
+        "cep": "02616-000",
+        "bairro": "Vila Continental",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2615",
+        "cep": "02615-000",
+        "bairro": "Vila Amélia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2617",
+        "cep": "02617-000",
+        "bairro": "Vila Bela Vista (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2613",
+        "cep": "02613-000",
+        "bairro": "Vila Nova Cachoeirinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2630",
+        "cep": "02630-000",
+        "bairro": "Vila Amélia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2618",
+        "cep": "02618-000",
+        "bairro": "Vila Amália (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2651",
+        "cep": "02651-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2633",
+        "cep": "02633-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2675",
+        "cep": "02675-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2611",
+        "cep": "02611-000",
+        "bairro": "Vila Nova Cachoeirinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2652",
+        "cep": "02652-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2671",
+        "cep": "02671-000",
+        "bairro": "Vila Dionisia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2650",
+        "cep": "02650-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2679",
+        "cep": "02679-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2674",
+        "cep": "02674-000",
+        "bairro": "Jardim Santa Cruz (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2680",
+        "cep": "02680-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2636",
+        "cep": "02636-000",
+        "bairro": "Vila Santos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2649",
+        "cep": "02649-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2634",
+        "cep": "02634-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2672",
+        "cep": "02672-000",
+        "bairro": "Jardim Santa Cruz (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2614",
+        "cep": "02614-000",
+        "bairro": "Vila Nova Cachoeirinha",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2635",
+        "cep": "02635-000",
+        "bairro": "Vila Pedra Branca",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2670",
+        "cep": "02670-000",
+        "bairro": "Vila Dionisia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2678",
+        "cep": "02678-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2637",
+        "cep": "02637-000",
+        "bairro": "Vila Santos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2677",
+        "cep": "02677-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2631",
+        "cep": "02631-000",
+        "bairro": "Jardim Peri",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2643",
+        "cep": "02643000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2653",
+        "cep": "02653-000",
+        "bairro": "Jardim Santa Cruz (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2760",
+        "cep": "02760-000",
+        "bairro": "Vila Ramos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2712",
+        "cep": "02712-000",
+        "bairro": "Jardim Pereira Leite",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2721",
+        "cep": "02721-000",
+        "bairro": "Limão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2739",
+        "cep": "02739-000",
+        "bairro": "Itaberaba",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2710",
+        "cep": "02710-000",
+        "bairro": "Limão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2730",
+        "cep": "02730-000",
+        "bairro": "Vila Albertina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2751",
+        "cep": "02751-000",
+        "bairro": "Vila Carbone",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2765",
+        "cep": "02765-000",
+        "bairro": "Vila Hebe",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2722",
+        "cep": "02722-000",
+        "bairro": "Vila Siqueira (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2752",
+        "cep": "02752-000",
+        "bairro": "Vila Carbone",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2758",
+        "cep": "02758-000",
+        "bairro": "Vila Bancária Munhoz",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2764",
+        "cep": "02764-000",
+        "bairro": "Parque Itaberaba",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2724",
+        "cep": "02724-000",
+        "bairro": "Vila Carolina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2755",
+        "cep": "02755-000",
+        "bairro": "Jardim Primavera (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2723",
+        "cep": "02723-000",
+        "bairro": "Vila Siqueira (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2720",
+        "cep": "02720-000",
+        "bairro": "Limão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2731",
+        "cep": "02731-000",
+        "bairro": "Vila Albertina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2726",
+        "cep": "02726-000",
+        "bairro": "Vila Palmeiras",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2728",
+        "cep": "02728-000",
+        "bairro": "Vila Palmeiras",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2757",
+        "cep": "02757-000",
+        "bairro": "Vila Bancária Munhoz",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2714",
+        "cep": "02714-000",
+        "bairro": "Jardim das Graças",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2735",
+        "cep": "02735-000",
+        "bairro": "Vila Primavera",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2763",
+        "cep": "02763-000",
+        "bairro": "Jardim Cachoeira",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2736",
+        "cep": "02736-000",
+        "bairro": "Parque Monteiro Soares",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2734",
+        "cep": "02734-000",
+        "bairro": "Nossa Senhora do Ó",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2762",
+        "cep": "02762-000",
+        "bairro": "Vila Santa Maria",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2727",
+        "cep": "02727-000",
+        "bairro": "Vila Palmeiras",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2733",
+        "cep": "02733-000",
+        "bairro": "Vila São Vicente",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2732",
+        "cep": "02732-000",
+        "bairro": "Vila Albertina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2759",
+        "cep": "02759-000",
+        "bairro": "Parque Mandi",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2725",
+        "cep": "02725-000",
+        "bairro": "Vila Palmeiras",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2738",
+        "cep": "02738-000",
+        "bairro": "Parque Monteiro Soares",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2729",
+        "cep": "02729-000",
+        "bairro": "Vila Albertina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2715",
+        "cep": "02715-000",
+        "bairro": "Limão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2754",
+        "cep": "02754-000",
+        "bairro": "Vila Maria Luisa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2737",
+        "cep": "02737-000",
+        "bairro": "Itaberaba",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2753",
+        "cep": "02753-000",
+        "bairro": "Vila Maria Luisa",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2756",
+        "cep": "02756-000",
+        "bairro": "Jardim Primavera (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2716",
+        "cep": "02716-000",
+        "bairro": "Limão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2717",
+        "cep": "02717-000",
+        "bairro": "Limão",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2713",
+        "cep": "02713-000",
+        "bairro": "Jardim das Graças",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2701",
+        "cep": "02701-000",
+        "bairro": "Jardim das Graças",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2750",
+        "cep": "02750-000",
+        "bairro": "Vila Carbone",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2855",
+        "cep": "02855-000",
+        "bairro": "Jardim Carombé",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2840",
+        "cep": "02840-000",
+        "bairro": "Parque São Luís",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2874",
+        "cep": "02874-000",
+        "bairro": "Jardim dos Francos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2866",
+        "cep": "02866-000",
+        "bairro": "Vila Penteado",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2801",
+        "cep": "02801-000",
+        "bairro": "Vila Brasilândia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2842",
+        "cep": "02842-000",
+        "bairro": "Jardim do Tiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2879",
+        "cep": "02879-000",
+        "bairro": "Jardim Damasceno",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2848",
+        "cep": "02848-000",
+        "bairro": "Brasilândia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2809",
+        "cep": "02809-000",
+        "bairro": "Sítio Morro Grande",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2814",
+        "cep": "02814-000",
+        "bairro": "Jardim Paulistano (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2841",
+        "cep": "02841000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2878",
+        "cep": "02878-000",
+        "bairro": "Jardim Vista Alegre",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2871",
+        "cep": "02871-000",
+        "bairro": "Jardim Ondina",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2881",
+        "cep": "02881-000",
+        "bairro": "Vila Francos",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2815",
+        "cep": "02815-000",
+        "bairro": "Conjunto Residencial Elisio Teixeira Leite",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2859",
+        "cep": "02859-000",
+        "bairro": "Jardim Brasília (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2820",
+        "cep": "02820-000",
+        "bairro": "Vila Brasilândia",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2834",
+        "cep": "02834000",
+        "bairro": "",
+        "estado": "",
+        "regiao": "",
+        "status": "não_encontrado"
+    },
+    {
+        "prefixo": "2861",
+        "cep": "02861-000",
+        "bairro": "Vila Rica",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2811",
+        "cep": "02811-000",
+        "bairro": "Jardim Monte Alegre (Zona Norte)",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2882",
+        "cep": "02882-000",
+        "bairro": "Jardim Centenário",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2804",
+        "cep": "02804-000",
+        "bairro": "Vila Cruz das Almas",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2865",
+        "cep": "02865-000",
+        "bairro": "Vila Penteado",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2835",
+        "cep": "02835-000",
+        "bairro": "Vila Serralheiro",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2837",
+        "cep": "02837-000",
+        "bairro": "Vila João Batista",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2847",
+        "cep": "02847-000",
+        "bairro": "Vila Itaberaba",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2839",
+        "cep": "02839-000",
+        "bairro": "Jardim Maracanã",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2850",
+        "cep": "02850-000",
+        "bairro": "Parque Belém",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    },
+    {
+        "prefixo": "2831",
+        "cep": "02831-000",
+        "bairro": "Itaberaba",
+        "estado": "São Paulo",
+        "regiao": "Sudeste",
+        "status": "encontrado"
+    }
+]

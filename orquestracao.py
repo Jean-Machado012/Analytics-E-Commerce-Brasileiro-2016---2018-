@@ -82,7 +82,7 @@ def task_salva_enderecos(enderecos):
 
 @task
 def task_salva_checkpoint(checkpoint):
-    with open(caminho_checkpoint, 'w', endcoding = 'uf-8') as arquivo:
+    with open(caminho_checkpoint, 'w', encoding = 'utf-8') as arquivo:
         json.dump(
             checkpoint,
             arquivo,
@@ -100,7 +100,11 @@ def pipeline_cep():
 
     enderecos = task_enderecos()
 
-    cont_rq = 0
+    cont_rq = (
+        checkpoint['requisicoes_realizadas']
+        if checkpoint is not None
+        else 0
+    )
 
     # Aqui será realizado o processamento dos prefixos e a atualização do checkpoint
 
@@ -126,10 +130,24 @@ def pipeline_cep():
 
         resultado = task_consultar_prefixo(prefixo)
 
+        enderecos.append(resultado)
+        print(f'Total de endereços em memória: {len(enderecos)}')
+
+        task_salva_enderecos(enderecos)
+
+        checkpoint = {
+            'ultimo_prefixo': prefixo,
+            'posicao' : posicao,
+            'requisicoes_realizadas' : cont_rq + 1,
+            'status' : 'em_andamento'
+        }
+
+        task_salva_checkpoint(checkpoint)
+        cont_rq += 1
+
         print(f'Resultado da consulta: {resultado}')
 
-        break
-    #     task_consultar_prefixo(i)
+        
 
 if __name__ == '__main__':
     pipeline_cep()

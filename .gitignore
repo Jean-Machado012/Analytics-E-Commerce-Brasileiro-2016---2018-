@@ -1,2 +1,5 @@
 # Arquivos temporários
 __pycache__/
+
+# Arquivo somente para identificar PK
+doc_primarykey.txt

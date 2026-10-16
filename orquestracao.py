@@ -150,4 +150,8 @@ def pipeline_cep():
         
 
 if __name__ == '__main__':
-    pipeline_cep()
+    pipeline_cep.serve(
+        name = 'agendamento-viacep',
+        cron = '0 9 * * *',
+        pause_on_shutdown = False
+    )

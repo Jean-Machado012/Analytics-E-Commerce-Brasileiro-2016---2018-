@@ -3,3 +3,13 @@ __pycache__/
 
 # Arquivo somente para identificar PK
 doc_primarykey.txt
+
+# Lista com prefixos
+prefixos.json
+
+# Agendador de Tarefas
+Task Schedule
+
+#Credencias
+.env
+.env.*

@@ -131,6 +131,6 @@ def converter_csv_parquet(arquivo):
     print(f'Registros no PARQUET: {len(df_parquet)}')
     print(f'Colunas iguais: {list(df.columns) == list(df_parquet.columns)}')
 
-
-for csvs in pasta_csv.glob('*.csv'):
-    converter_csv_parquet(csvs.name)
+if __name__ == '__main__':
+    for csvs in pasta_csv.glob('*.csv'):
+        converter_csv_parquet(csvs.name)

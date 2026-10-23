@@ -2,6 +2,7 @@ import json, os
 from pathlib import Path
 from prefect import flow, task
 from extracao import solicitar_api
+from prefect.client.schemas.schedules import CronSchedule
 
 base_dir = Path(__file__).resolve().parent
 caminho_prefixo = base_dir / 'prefixos.json'
@@ -150,4 +151,11 @@ def pipeline_cep():
         
 
 if __name__ == '__main__':
-    pipeline_cep()
+    pipeline_cep.serve(
+        name = 'agendamento-viacep',
+        schedule = CronSchedule(
+            cron = '0 9 * * *',
+            timezone = 'America/Sao_Paulo'
+        ),
+        pause_on_shutdown = False
+    )

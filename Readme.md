@@ -94,14 +94,23 @@ Nesta etapa, comecei a estruturar a orquestração das consultas à API ViaCEP u
 
 - Validada a execução de lotes completos antes de avançar para as próximas etapas de tratamento.
 
+- Criado dois arquivos .bat para automatizar a incialização do servidor Prefect e ativação do script no orquestracao.py, através do agendador de tarefas do windows
+
+
+## 4ª Etapa - Conexão com o MySQL
+
+- Feita verificação dos arquivos em parquet
+
+- Realizada a conexão com o MySQL através da engine do Python e utilizando o SQLAlchemy
+
+- Criação da tabela prodcut_category
+
 
 ### Próximas etapas
 
-- Implementar a conexão do pipeline Python com o banco de dados MySQL.
-
-- Realizar a carga inicial das tabelas CSV do dataset Olist no banco de dados.
-
 - Implementar a inserção dos dados de endereços obtidos pela API ViaCEP, utilizando processamento em lotes.
+
+- Realizar INSERT dos dados na tabela product_category
 
 - Validar a integridade dos dados carregados e a consistência entre as tabelas.
 

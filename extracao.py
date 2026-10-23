@@ -107,3 +107,30 @@ def solicitar_api(prefixo):
 
 
     return consulta_cep_completo
+
+
+# --------------------- Convertendo arquivos para PARQUET -------------------
+
+pasta_parquet = base_dir / 'Parquet'
+
+pasta_parquet.mkdir(parents = True, exist_ok = True)
+
+def converter_csv_parquet(arquivo):
+    caminho_csv = pasta_csv / arquivo
+    caminho_parquet = pasta_parquet / f'{Path(arquivo).stem}.parquet'
+
+    df = pd.read_csv(caminho_csv)
+    df.to_parquet(caminho_parquet, engine = 'pyarrow', index = False)
+
+    print(f'Arquivo convertido: {caminho_parquet}')
+    print(f'Qtd de registros: {len(df)}')
+
+    df_parquet = pd.read_parquet(caminho_parquet, engine = 'pyarrow')
+
+    print(f'Registros no CSV: {len(df)}')
+    print(f'Registros no PARQUET: {len(df_parquet)}')
+    print(f'Colunas iguais: {list(df.columns) == list(df_parquet.columns)}')
+
+if __name__ == '__main__':
+    for csvs in pasta_csv.glob('*.csv'):
+        converter_csv_parquet(csvs.name)

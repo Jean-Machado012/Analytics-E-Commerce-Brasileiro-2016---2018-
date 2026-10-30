@@ -106,15 +106,23 @@ Nesta etapa, comecei a estruturar a orquestração das consultas à API ViaCEP u
 - Criação da tabela prodcut_category
 
 
+## 5ª Etapa - Criando Stage e Data Warehouse
+
+-  Realizado insert dos dados das tabelas através do python e também feito a automização de inserção dos dados que são consumidos pela API
+
+- Criada à área de STAGE para tratamento das tabelas e não realizar concorrência com o banco princiapal ou de produção, já realizando o processo de transformação do ETL
+
+- Criação de Views do stage para acelerar o consumo dos dados
+
+- Criei uma Sotred Procedure para carregar o tratamento feito no STAGE
+
+- Criei as tabelas fatos e dimensões do Data Warehouse
+
 ### Próximas etapas
 
-- Implementar a inserção dos dados de endereços obtidos pela API ViaCEP, utilizando processamento em lotes.
+- Popular o DW através do TRUNCATE - INSERT
 
-- Realizar INSERT dos dados na tabela product_category
-
-- Validar a integridade dos dados carregados e a consistência entre as tabelas.
-
-- Desenvolver consultas SQL para relacionar as tabelas e preparar os dados para análise.
+- Criar tabela dimensão Calendário
 
 
 ### Status

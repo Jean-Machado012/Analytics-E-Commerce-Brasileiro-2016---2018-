@@ -583,6 +583,71 @@ def insert_dados_sellers(df):
 
     print(f'Registros enviados para tabela sellers: {len(df)} linhas')
 
+
+# ---------- Enderecos API ----------
+
+def ler_enderecos_api():
+    arquivo = base_dir / 'Enderecos' / 'enderecos.json'
+
+    if not arquivo.exists():
+        raise FileNotFoundError (
+            print(f'Arquivo não encontrado: {arquivo}')
+        )
+
+    df = pd.read_json(arquivo)
+
+    print('---------- Enderecos ----------')
+    print(f'Registros: {len(df)}')
+    print(f'Colunas: {list(df.columns)}')
+    print('Amostra dos dados: ')
+    print(df.head())
+
+    return df
+
+
+df_enderecos_api = ler_enderecos_api()
+
+
+def table_enderecos_api():
+    script = text('''
+        CREATE TABLE IF NOT EXISTS api_enderecos(
+            prefix VARCHAR(5) NOT NULL,
+            cep VARCHAR(9) NOT NULL,
+            bairro VARCHAR(100),
+            estado VARCHAR(100),
+            regiao VARCHAR(20),
+            status VARCHAR(30),
+            PRIMARY KEY(prefix)
+        )
+    '''
+    )
+
+    with engine.begin() as conexao:
+        conexao.execute(script)
+
+    print('Tabela enderecos já criada ou existente')
+
+
+
+def insert_dados_api_enderecos(df):
+    df = df.rename(columns = {
+        'prefixo' : 'prefix'
+    })
+
+    with engine.begin() as conexao:
+        df.to_sql(
+            name = 'api_enderecos',
+            con = conexao,
+            if_exists = 'append',
+            index = False,
+            chunksize = 1000
+        )
+
+    print(f'Registros enviados para tabela api_endereços: {len(df)} linhas')
+
+
+ler_enderecos_api()
+
 # Lendo as tabelas no parquet
 
 def read_tables():
@@ -595,6 +660,7 @@ def read_tables():
     ler_orders()
     ler_products()
     ler_sellers()
+    ler_enderecos_api()
 
 
 # Realizando o CREATE TABLE no banco
@@ -609,6 +675,7 @@ def create_tables():
     table_orders()
     table_products()
     table_sellers()
+    table_enderecos_api()
 
 
 # Inserindo dados nas tabelas
@@ -625,9 +692,8 @@ def insert_dados():
     insert_dados_product_category(df_product_category)
 
 
-
-
 if __name__ == '__main__':
     read_tables()
-    create_tables()
+    # create_tables()
     # insert_dados()
+    # insert_dados_api_enderecos(df_enderecos_api)

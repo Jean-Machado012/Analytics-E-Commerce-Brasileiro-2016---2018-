@@ -1,8 +1,11 @@
+import pandas as pd
 import json, os
 from pathlib import Path
-from prefect import flow, task
+from prefect import flow, task, serve
 from extracao import solicitar_api
 from prefect.client.schemas.schedules import CronSchedule
+from sqlalchemy import URL, create_engine, text
+from carga_mysql import insert_dados_api_enderecos, ler_enderecos_api
 
 base_dir = Path(__file__).resolve().parent
 caminho_prefixo = base_dir / 'prefixos.json'
@@ -11,6 +14,16 @@ caminho_checkpoint = base_dir / 'Enderecos' / 'checkpoint.json'
 
 limite_requisicoes = 400
 
+conn_mysql = URL.create(
+    drivername = 'mysql+mysqlconnector',
+    username = os.getenv('MYSQL_USER'),
+    password = os.getenv('MYSQL_PASSWORD'),
+    host = os.getenv('MYSQL_HOST'),
+    port = int(os.getenv('MYSQL_PORT')),
+    database = os.getenv('MYSQL_SCHEMA')
+)
+
+engine = create_engine(conn_mysql)
 
 
 def salva_temp_json(caminho, dados):
@@ -91,6 +104,89 @@ def task_salva_checkpoint(checkpoint):
             indent = 4
         )
 
+
+@task
+# Realiza a consulta no banco e retorna a quantiade de prefixos já existentes no banco
+def task_consulta_prefixo_mysql():
+    with engine.connect() as conexao:
+        resultado = conexao.execute(
+            text(
+                'SELECT prefix FROM db_analitycs_olist.api_enderecos;'
+            )
+        )
+
+        prefixos = resultado.scalars().all()
+
+    return {
+        str(prefixo)
+        for prefixo in prefixos
+        if prefixo is not None
+    }
+
+
+@task
+# Vai guardar somente os enderecos novos
+def task_filtra_enderecos_novos(enderecos, prefixos_existentes):
+    # Aqui já armazena em df os enderecos do json
+    df_enderecos = pd.DataFrame(enderecos)
+
+    if df_enderecos.empty:
+        return df_enderecos
+
+    # Transforma a coluna em string
+    df_enderecos['prefixo'] = (df_enderecos['prefixo'].astype(str))
+
+    # Verifica com o que já existe no banco, se existir retorna True
+    # então é utilizado o sinal "~" para inverter essa lógica e sempre
+    # que encontrar o igual ele retornará False, e o True irá para os
+    # que não foram encontrados. Depois utilizar a função copy() para
+    # copiar somente os que tem resultado como True
+    df_novos = df_enderecos[
+        ~df_enderecos['prefixo'].isin(prefixos_existentes)
+    ].copy()
+
+
+    # Verifica os prefixos copiados e remove as duplicatas
+    df_novos = df_novos.drop_duplicates(
+        subset = ['prefixo']
+    )
+
+    return df_novos
+
+
+@task
+def task_insert_enderecos_mysql(df_novos):
+    if df_novos.empty:
+        print('Nenhum endereço para enviar ao banco')
+        return
+
+    insert_dados_api_enderecos(df_novos)
+
+    print(f'Qtd de enderecos enviados para o banco: {len(df_novos)}')
+
+
+
+@flow(name = 'Carga de Enderecos ViaCEP para o MySQL')
+def pipeline_carga_enderecos_mysql():
+    
+    enderecos = task_enderecos()
+
+    if not enderecos:
+        print('Nenhum endereço encontrado no JSON')
+        return
+
+    prefixos_existentes = task_consulta_prefixo_mysql()
+
+    df_novos = task_filtra_enderecos_novos(enderecos, prefixos_existentes)
+
+    print(f'Endereços lidos no JSON: {len(enderecos)}')
+    print(f'Prefixos existentes no MySQL: {len(prefixos_existentes)}')
+    print(f'Novos registros identificados: {len(df_novos)}')
+
+    task_insert_enderecos_mysql(df_novos)
+
+
+
 @flow
 def pipeline_cep():
     lista_prefixos = task_carregar_prefixos()
@@ -148,14 +244,30 @@ def pipeline_cep():
 
         print(f'Resultado da consulta: {resultado}')
 
-        
+
+
+   
+
 
 if __name__ == '__main__':
-    pipeline_cep.serve(
+    deployment_viacep = pipeline_cep.to_deployment(
         name = 'agendamento-viacep',
         schedule = CronSchedule(
             cron = '0 9 * * *',
             timezone = 'America/Sao_Paulo'
-        ),
+        )
+    )
+
+    deployment_mysql = pipeline_carga_enderecos_mysql.to_deployment(
+        name = 'agendamento-viacep-mysql',
+        schedule = CronSchedule(
+            cron = '0 10 * * *',
+            timezone = 'America/Sao_Paulo'
+        )
+    )
+
+    serve(
+        deployment_viacep,
+        deployment_mysql,
         pause_on_shutdown = False
     )

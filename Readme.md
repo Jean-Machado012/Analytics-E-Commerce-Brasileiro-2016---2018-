@@ -114,15 +114,20 @@ Nesta etapa, comecei a estruturar a orquestração das consultas à API ViaCEP u
 
 - Criação de Views do stage para acelerar o consumo dos dados
 
-- Criei uma Sotred Procedure para carregar o tratamento feito no STAGE
+- Realizada verificação do stage e correção com os erros ocorridos, corrigido problemas de integridade de chaves referenciais
 
 - Criei as tabelas fatos e dimensões do Data Warehouse
 
+- Todo o carregamento e atualização dos dados está sendo feito por TRUNCATE - INSERT
+
+- Criado Store Procedures para carregamento, da área de Stage, do Data Warehouse e de todo o ambiente
+
+
 ### Próximas etapas
 
-- Popular o DW através do TRUNCATE - INSERT
+- Consumir dados no Power BI
 
-- Criar tabela dimensão Calendário
+- Criar tabela dimensão Calendário e dimensão Hora
 
 
 ### Status

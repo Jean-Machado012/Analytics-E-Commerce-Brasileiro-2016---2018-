@@ -69,6 +69,8 @@ def solicitar_api(prefixo):
 
     url = f'https://viacep.com.br/ws/{cep}/json/'
 
+    print(f'Api iniciando consulta: {cep}', flush = True)
+
     consulta_cep_completo = {
         'prefixo' : prefixo,
         'cep' : cep,
@@ -80,6 +82,7 @@ def solicitar_api(prefixo):
 
     try:
         request = requests.get(url, timeout = 10)
+        print(f'HTTP: {request.status_code}', flush = True)
         sleep(0.5)
 
         if request.status_code != 200:
@@ -87,10 +90,16 @@ def solicitar_api(prefixo):
             return consulta_cep_completo
 
         response = request.json()
+        print(f'Resposta recebida: {response}', flush = True)
 
     except RequestException as erro:
         print(f'Erro ao consultar CEP: {cep} -> ({erro})')
         consulta_cep_completo['status'] = 'erro_conexao'
+        return consulta_cep_completo
+
+    except ValueError as erro:
+        print(f'Erro ao interprestar JSON {erro}', flush = True)
+        consulta_cep_completo['status'] = 'erro_json'
         return consulta_cep_completo
 
     if 'erro' in response:

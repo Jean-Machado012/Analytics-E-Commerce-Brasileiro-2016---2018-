@@ -1,8 +1,8 @@
+USE staging_analitycs_olist;
+
 DELIMITER $$
 
 CREATE PROCEDURE usp_st_load()
-
-USE staging_analitycs_olist;
 
 BEGIN
 
@@ -14,7 +14,8 @@ CREATE TABLE IF NOT EXISTS st_customers(
     customer_unique_id VARCHAR(100),
     customer_zip_code_prefix INT,
     customer_city VARCHAR(100),
-    customer_state VARCHAR(50)
+    customer_state VARCHAR(50),
+    INDEX idx_unique (customer_unique_id)
 );
 
 
@@ -113,8 +114,6 @@ TRUNCATE TABLE st_orders;
 TRUNCATE TABLE st_product_category;
 TRUNCATE TABLE st_products;
 TRUNCATE TABLE st_sellers;
-
-
 
 /* ---------- Populando área de STAGE ---------- */
 
@@ -281,7 +280,52 @@ SELECT	prefix,
 FROM db_analitycs_olist.api_enderecos;
 
 
+
+/* ---------- Deletando duplicadas da tabela customers ---------- */
+
+-- Desabilitando Safe Updates
+SET SQL_SAFE_UPDATES = 0;
+
+-- Criando tabela temporária
+CREATE TABLE st_dim_customer_limpa(
+	customer_id 				VARCHAR(100),
+    customer_unique_id			VARCHAR(100),
+    customer_zip_code_prefix	INT,
+    customer_city				VARCHAR(100),
+    customer_state				VARCHAR(50)
+);
+
+-- Inserindo idCustomer único na tabela nova
+INSERT INTO staging_analitycs_olist.st_dim_customer_limpa(
+	customer_unique_id
+)
+SELECT 	DISTINCT(customer_unique_id)
+FROM staging_analitycs_olist.st_customers;
+
+-- Inserindo demais campos na tabela temporária
+UPDATE staging_analitycs_olist.st_dim_customer_limpa	A
+INNER JOIN staging_analitycs_olist.st_customers			B
+	ON A.customer_unique_id = B.customer_unique_id
+SET
+	A.customer_id 				= B.customer_id,
+    A.customer_zip_code_prefix 	= B.customer_zip_code_prefix,
+    A.customer_city				= B.customer_city,
+    A.customer_state 			= B.customer_state;
+
+
+-- Limpando tabela original do ST com dados duplicados
+TRUNCATE TABLE staging_analitycs_olist.st_customers;
+
+-- Inserindo os dados com idCustomer único
+INSERT INTO staging_analitycs_olist.st_customers
+	SELECT * FROM staging_analitycs_olist.st_dim_customer_limpa;
+  
+-- Deletando a tabela temporária
+DROP TABLE staging_analitycs_olist.st_dim_customer_limpa;
+
+-- Habilitando novamente o Safe Updates
+SET SQL_SAFE_UPDATES = 1;
+
 END $$
 
 DELIMITER ;
-

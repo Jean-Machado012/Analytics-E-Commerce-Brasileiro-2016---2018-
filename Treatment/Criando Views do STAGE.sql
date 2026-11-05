@@ -7,12 +7,12 @@ AS (
 			C.cep,
 			C.bairro,
 			C.estado,
-			B.state								AS 'UF',
+			A.customer_state					AS 'UF',
 			C.regiao
-	FROM st_customers 			A
-	LEFT JOIN st_geolocation	B
+	FROM staging_analitycs_olist.st_customers 			A
+	LEFT JOIN staging_analitycs_olist.st_geolocation	B
 		ON A.customer_zip_code_prefix = B.zip_code_prefix
-	LEFT JOIN st_api_enderecos	C
+	LEFT JOIN staging_analitycs_olist.st_api_enderecos	C
 		ON A.customer_zip_code_prefix = C.prefix
 );
 
@@ -69,10 +69,10 @@ AS (
 			C.payment_sequential				AS 'qtd_methods_payments',
 			C.payment_type,
 			C.payment_installments				AS 'qtd_parcelada'
-	FROM st_orders					A
-	LEFT JOIN st_order_items		B
-		ON A.order_id = B.order_id
-	LEFT JOIN st_order_payments		C
+	FROM st_orders									A
+	LEFT JOIN st_order_items						B
+		ON A.order_id = B.order_id				
+	LEFT JOIN st_order_payments						C
 		ON A.order_id = C.order_id
 );
     
@@ -90,5 +90,4 @@ AS (
 			TIME(answer_timestamp)	AS 'answer_time'
 	FROM st_order_reviews
 );
-
 

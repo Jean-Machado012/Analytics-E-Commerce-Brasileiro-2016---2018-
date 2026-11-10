@@ -1,0 +1,483 @@
+table Medidas
+	lineageTag: afafd912-13e4-4148-9034-6634661cfc66
+
+	measure '$ | Preco' = SUM(fato_orders[price])
+		displayFolder: Gerais
+		lineageTag: 31db5375-c883-4a08-b8e5-7f38f3958795
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '$ | Frete' = SUM(fato_orders[valor_frete])
+		displayFolder: Gerais
+		lineageTag: 50fc0e6f-d36d-4c0c-9ede-97fea340409d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '# | Qtd Itens' = SUM(fato_orders[qtdItens])
+		formatString: 0
+		displayFolder: Gerais
+		lineageTag: c992b67b-b00d-4249-aa9a-0b179a42d34c
+
+	measure '$ | Faturamento' =
+			
+			VAR vPrecoFinal =
+			SUMX(
+			    fato_orders,
+			    fato_orders[price] * fato_orders[qtdItens]
+			)
+			VAR vFreteFinal =
+			SUMX(
+			    fato_orders,
+			    fato_orders[valor_frete] * fato_orders[qtdItens]
+			)
+			RETURN
+			vPrecoFinal + vFreteFinal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: Gerais
+		lineageTag: e279499b-01e2-4ac2-a7a3-da4b77172334
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '# | Qtd Ordens' = DISTINCTCOUNT(fato_orders[idOrder])
+		formatString: 0
+		displayFolder: Gerais
+		lineageTag: d5a67226-75b3-49dd-af0e-c9d611bd649c
+
+	measure '$ | Ticket Medio' =
+			
+			DIVIDE(
+			    [$ | Faturamento],
+			    [# | Qtd Ordens]
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: Gerais
+		lineageTag: a6441fb2-f271-47a7-87b5-e67da1e8cb90
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ | Preco Medio' =
+			
+			DIVIDE(
+			    [$ | Faturamento],
+			    [# | Qtd Itens]
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: Gerais
+		lineageTag: c7396361-495b-4889-a5f4-70ebfe114de4
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '# | Itens NF' =
+			
+			DIVIDE(
+			    [# | Qtd Itens],
+			    [# | Qtd Ordens]
+			)
+		formatString: #,0.00
+		displayFolder: Gerais
+		lineageTag: 4d82759a-9b54-4f9f-a971-e70836b3ede0
+
+	measure '# | Qtd Clientes' = DISTINCTCOUNT(dim_customers[idCustomer])
+		formatString: #,0
+		displayFolder: Gerais
+		lineageTag: 12c8857a-f39d-4952-ad44-b89a9c86a2b3
+
+	measure '# LY | Itens Atendimento' = ```
+			
+			 CALCULATE(
+			    [# | Itens NF],
+			    PREVIOUSYEAR(dim_calendario[Data])
+			 )
+			```
+		displayFolder: Temporais\Last Year
+		lineageTag: 025ab281-efb1-4761-ad1e-1b5bd6a40d5f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '# LY | Qtd Clientes' =
+			
+			CALCULATE(
+			    [# | Qtd Clientes],
+			    PREVIOUSYEAR(dim_calendario[Data])
+			)
+		formatString: 0
+		displayFolder: Temporais\Last Year
+		lineageTag: 42a4c9ba-ea77-4f5b-a4d2-101540a4d656
+
+	measure '# LY | Qtd Itens' =
+			
+			CALCULATE(
+			    [# | Qtd Itens],
+			    PREVIOUSYEAR(dim_calendario[Data])
+			)
+		formatString: 0
+		displayFolder: Temporais\Last Year
+		lineageTag: c79b91cb-8164-4214-ad5d-4693b0fc7672
+
+	measure '# LY | Qtd Ordens' =
+			
+			CALCULATE(
+			    [# | Qtd Ordens],
+			    PREVIOUSYEAR(dim_calendario[Data])
+			)
+		formatString: 0
+		displayFolder: Temporais\Last Year
+		lineageTag: be67e3f7-1513-4c53-9984-0954184295b0
+
+	measure '$ LY | Faturamento' =
+			
+			CALCULATE(
+			    [$ | Faturamento],
+			    PREVIOUSYEAR(dim_calendario[Data])
+			)
+		displayFolder: Temporais\Last Year
+		lineageTag: c684b471-76d4-4b1f-bd87-59f5884a6bb3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '$ LY | Frete' =
+			
+			CALCULATE(
+			    [$ | Frete],
+			    PREVIOUSYEAR(dim_calendario[Data])
+			)
+		displayFolder: Temporais\Last Year
+		lineageTag: 22a0f132-cc19-4843-a9f8-a7c94eb557af
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '$ LY | Preco' =
+			
+			CALCULATE(
+			    [$ | Preco],
+			    PREVIOUSYEAR(dim_calendario[Data])
+			)
+		displayFolder: Temporais\Last Year
+		lineageTag: e61ea3ea-1fe3-403b-98f9-fbb70f30349f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '$ LY | Preco Medio' =
+			
+			CALCULATE(
+			    [$ | Preco Medio],
+			    PREVIOUSYEAR(dim_calendario[Data])
+			)
+		displayFolder: Temporais\Last Year
+		lineageTag: 4e14dadb-0595-4b41-a1c6-c27c9dd8b02b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '$ LY | Ticket Medio' =
+			
+			CALCULATE(
+			    [$ | Ticket Medio],
+			    PREVIOUSYEAR(dim_calendario[Data])
+			)
+		displayFolder: Temporais\Last Year
+		lineageTag: 3aa6149e-bcfd-4a8d-87e8-552b7b771f1d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '# LM | Itens Atendimento' =
+			
+			CALCULATE(
+			    [# | Itens NF],
+			    PREVIOUSMONTH(dim_calendario[Data])
+			)
+		displayFolder: Temporais\Last Month
+		lineageTag: 25aaeea1-93f2-424b-a4b3-d6d872cb33dd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '# LM | Qtd Clientes' =
+			
+			CALCULATE(
+			    [# | Qtd Clientes],
+			    PREVIOUSMONTH(dim_calendario[Data])
+			)
+		formatString: 0
+		displayFolder: Temporais\Last Month
+		lineageTag: d122baa7-6b8d-418c-97cc-e6ef4b2e49e0
+
+	measure '# LM | Qtd Itens' =
+			
+			CALCULATE(
+			    [# | Qtd Itens],
+			    PREVIOUSMONTH(dim_calendario[Data])
+			)
+		formatString: 0
+		displayFolder: Temporais\Last Month
+		lineageTag: ed542b3d-08a4-42ac-961b-5babb93f5aa8
+
+	measure '# LM | Qtd Ordens' =
+			
+			CALCULATE(
+			    [# | Qtd Ordens],
+			    PREVIOUSMONTH(dim_calendario[Data])
+			)
+		formatString: 0
+		displayFolder: Temporais\Last Month
+		lineageTag: 4ca97de8-6337-4b3d-9f71-b4689c18f1d6
+
+	measure '$ LM | Faturamento' =
+			
+			CALCULATE(
+			    [$ | Faturamento],
+			    PREVIOUSMONTH(dim_calendario[Data])
+			)
+		displayFolder: Temporais\Last Month
+		lineageTag: daa56f5f-04a0-464d-87d0-4b487b4496cd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '$ LM | Frete' =
+			
+			CALCULATE(
+			    [$ | Frete],
+			    PREVIOUSMONTH(dim_calendario[Data])
+			)
+		displayFolder: Temporais\Last Month
+		lineageTag: 3de3b9e2-66ad-4705-a81a-64695449e511
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '$ LM | Preco' =
+			
+			CALCULATE(
+			    [$ | Preco],
+			    PREVIOUSMONTH(dim_calendario[Data])
+			)
+		displayFolder: Temporais\Last Month
+		lineageTag: 98b27ed0-8ae1-4a23-8b41-d221ef55ac4e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '$ LM | Preco Medio' =
+			
+			CALCULATE(
+			    [$ | Preco Medio],
+			    PREVIOUSMONTH(dim_calendario[Data])
+			)
+		displayFolder: Temporais\Last Month
+		lineageTag: 73eacc14-f5c5-4fa4-8b4a-7d1caa7e1942
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '$ LM | Ticket Medio' =
+			
+			CALCULATE(
+			    [$ | Ticket Medio],
+			    PREVIOUSMONTH(dim_calendario[Data])
+			)
+		displayFolder: Temporais\Last Month
+		lineageTag: 04e94cd1-2fc0-43ef-b5d3-6c4bc4058a38
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% | Taxa Recompra' = ```
+			
+			VAR vClienteRecorrente = 
+			COUNTROWS(
+			    FILTER(
+			        VALUES(fato_orders[idCustomer]),
+			        DISTINCTCOUNT(fato_orders[idOrder]) > 1
+			    )
+			)
+			-- Os cliente únicos vão ser filtrados independente do tempo
+			VAR vClienteUnicos = DISTINCTCOUNT(fato_orders[idCustomer])
+			VAR vTxRecompra =
+			DIVIDE(
+			    vClienteRecorrente,
+			    vClienteUnicos
+			)
+			RETURN
+			vTxRecompra
+			```
+		formatString: #,0.00%;-#,0.00%;#,0.00%
+		displayFolder: Gerais
+		lineageTag: bff65c7d-8045-4ac8-865d-cb71a1d060f8
+
+	measure '$ | Valor Medio Itens' = ```
+			
+			VAR vPreco =
+			SUMX(
+			    fato_orders,
+			    fato_orders[price] * fato_orders[qtdItens]
+			)
+			VAR vItens = [# | Qtd Itens]
+			VAR vValorMedio = 
+			DIVIDE(
+			    vPreco,
+			    vItens
+			)
+			RETURN
+			vValorMedio
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: Gerais
+		lineageTag: 1381eea5-6a91-4f3c-9b23-8884d09f66df
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ | Frete Medio Item' = ```
+			
+			VAR vFrete =
+			SUMX(
+			    fato_orders,
+			    fato_orders[valor_frete] * fato_orders[qtdItens]
+			)
+			VAR vQtdFrete =
+			COUNTX(
+			    fato_orders,
+			    COUNT(fato_orders[valor_frete]) * fato_orders[qtdItens]
+			)
+			VAR vFreteMedio = 
+			DIVIDE(
+			    vFrete,
+			    vQtdFrete
+			)
+			RETURN
+			vFreteMedio
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: Gerais
+		lineageTag: 0f0cd65a-81c6-4b06-aefd-340f1de7a513
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ | Frete Medio Pedido' =
+			
+			VAR vFrete =
+			SUMX(
+			    fato_orders,
+			    fato_orders[valor_frete] * fato_orders[qtdItens]
+			)
+			VAR vPedidos = [# | Qtd Ordens]
+			VAR vResultado =
+			DIVIDE(
+			    vFrete,
+			    vPedidos
+			)
+			RETURN
+			vResultado
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: Gerais
+		lineageTag: 8c9a2fb3-35f0-444d-bf06-d3d1e9da09ce
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '# | Qtd Clientes Ano' = DISTINCTCOUNT(fato_orders[idCustomer])
+		formatString: #,0
+		displayFolder: Gerais
+		lineageTag: 51f53f19-5a31-42a8-ad58-a33792d8e25e
+
+	measure '% | Variacao Faturamento Mensal' =
+			
+			VAR vMes = MONTH(MAX(dim_calendario[Data]))
+			VAR vFatAtual = [$ | Faturamento]
+			VAR vFatAnterior = [$ LM | Faturamento]
+			RETURN
+			IF(
+			    vMes = 1,
+			    0,
+			    DIVIDE(
+			        vFatAtual -vFatAnterior,
+			        vFatAnterior
+			    )
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Temporais
+		lineageTag: 1ebb45b3-f823-4713-b254-ba2f7ed35ed3
+
+	measure '% | Faturamento Anual' =
+			
+			DIVIDE(
+			    [$ | Faturamento] - [$ LY | Faturamento],
+			    [$ LY | Faturamento]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Temporais
+		lineageTag: a1d8b844-21b2-4866-9cf7-b46b948743cf
+
+	measure '% | Variacao Faturamento Mensal 2016' = ```
+			
+			VAR vMes = 
+			CALCULATE(
+			    MONTH(MIN(fato_orders[data_compra])),
+			    YEAR(fato_orders[data_compra]) = 2016
+			)
+			VAR vFatAtual = 
+			CALCULATE(
+			    [$ | Faturamento],
+			    YEAR(fato_orders[data_compra]) = 2016
+			)
+			VAR vFatAnterior = 
+			CALCULATE(
+			    vFatAtual,
+			    PREVIOUSMONTH(fato_orders[data_compra])
+			)
+			RETURN
+			IF(
+			    vMes = 9,
+			    0,
+			    DIVIDE(
+			        vFatAtual -vFatAnterior,
+			        vFatAnterior
+			    )
+			)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Temporais
+		lineageTag: 6f34cfb0-016d-45d1-a747-83dbab39568e
+
+	measure '% | Variacao Faturamento Mensal 2017' = ```
+			
+			VAR vMes = MONTH(MAX(dim_calendario[Data]))
+			VAR vFatAtual = 
+			CALCULATE(
+			    [$ | Faturamento],
+			    dim_calendario[Ano] = 2017
+			)
+			VAR vFatAnterior = 
+			CALCULATE(
+			    vFatAtual,
+			    PREVIOUSMONTH(dim_calendario[Data])
+			)
+			RETURN
+			IF(
+			    vMes = 1,
+			    0,
+			    DIVIDE(
+			        vFatAtual -vFatAnterior,
+			        vFatAnterior
+			    )
+			)
+			```
+		displayFolder: Temporais
+		lineageTag: 73e87f13-cac3-4077-85bf-d23ae24d35fd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Coluna 1'
+		dataType: string
+		isHidden
+		lineageTag: 10db9b59-b701-43d8-8be1-7b4ffce86e7a
+		summarizeBy: none
+		sourceColumn: Coluna 1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

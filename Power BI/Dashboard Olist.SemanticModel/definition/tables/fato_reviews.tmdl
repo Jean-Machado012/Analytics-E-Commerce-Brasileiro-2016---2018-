@@ -1,0 +1,93 @@
+table fato_reviews
+	lineageTag: dd18b6a9-55ee-40c5-a186-34e05f2bb0e9
+
+	column idReview
+		dataType: string
+		lineageTag: 5a6d6381-45b2-4b3c-a908-32655b630fa0
+		summarizeBy: none
+		sourceColumn: idReview
+
+		annotation SummarizationSetBy = Automatic
+
+	column idOrder
+		dataType: string
+		lineageTag: 9da69ce7-1705-4797-a186-f80956c9c57c
+		summarizeBy: none
+		sourceColumn: idOrder
+
+		annotation SummarizationSetBy = Automatic
+
+	column score
+		dataType: int64
+		formatString: 0
+		lineageTag: 5a14440b-34a3-4878-a889-936723201758
+		summarizeBy: sum
+		sourceColumn: score
+
+		annotation SummarizationSetBy = Automatic
+
+	column comment_title
+		dataType: string
+		lineageTag: b2756854-2b2c-4d20-beed-d385a919c832
+		summarizeBy: none
+		sourceColumn: comment_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column comment_message
+		dataType: string
+		lineageTag: fa199fb5-fddd-4e00-879a-8c646dec6e6d
+		summarizeBy: none
+		sourceColumn: comment_message
+
+		annotation SummarizationSetBy = Automatic
+
+	column creation_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c4ba4145-e443-4783-9c61-83e84b59db4c
+		summarizeBy: none
+		sourceColumn: creation_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column answer_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 68fb12a2-85c6-4209-91d6-244523dbeead
+		summarizeBy: none
+		sourceColumn: answer_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column answer_time
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: f91dbb71-fa7f-4562-92e3-6ef53988c90e
+		summarizeBy: none
+		sourceColumn: answer_time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	partition fato_reviews = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("localhost", "dw_analitycs_olist", [ReturnSingleDatabase=true, HierarchicalNavigation=true]),
+				    dw_analitycs_olist = Fonte{[Schema="dw_analitycs_olist"]}[Data],
+				    fato_reviews1 = dw_analitycs_olist{[Name="fato_reviews"]}[Data],
+				    #"Colunas Removidas" = Table.RemoveColumns(fato_reviews1,{"id"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Removidas",{{"idReview", type text}, {"idOrder", type text}, {"score", Int64.Type}, {"comment_title", type text}, {"comment_message", type text}, {"creation_date", type date}, {"answer_date", type date}, {"answer_time", type time}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

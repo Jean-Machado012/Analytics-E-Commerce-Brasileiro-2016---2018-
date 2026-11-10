@@ -1,0 +1,116 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "45562e4010916d810cb0",
+  "position": {
+    "x": 701.230728265211,
+    "y": 51.53401677539609,
+    "z": 2000,
+    "height": 173.00705631740115,
+    "width": 944.17680734922124,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "% | Taxa Recompra"
+                }
+              },
+              "queryRef": "Medidas.% | Taxa Recompra",
+              "nativeQueryRef": "% | Taxa Recompra"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Valor Medio Itens"
+                }
+              },
+              "queryRef": "Medidas.$ | Valor Medio",
+              "nativeQueryRef": "$ | Valor Medio Itens"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Frete Medio Item"
+                }
+              },
+              "queryRef": "Medidas.$ | Frete Medio",
+              "nativeQueryRef": "$ | Frete Medio Item"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Frete Medio Pedido"
+                }
+              },
+              "queryRef": "Medidas.$ | Frete Medio Pedido",
+              "nativeQueryRef": "$ | Frete Medio Pedido"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Medidas"
+                  }
+                },
+                "Property": "% | Taxa Recompra"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.% | Taxa Recompra"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

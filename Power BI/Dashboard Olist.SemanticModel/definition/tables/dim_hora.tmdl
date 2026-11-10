@@ -1,0 +1,149 @@
+table dim_hora
+	lineageTag: b6479752-79ae-49a2-a841-efcbf86665d1
+
+	column Segundo
+		dataType: int64
+		formatString: 0
+		lineageTag: 5c70a354-df00-4984-8c48-75eb22712ea4
+		summarizeBy: sum
+		sourceColumn: Segundo
+
+		annotation SummarizationSetBy = Automatic
+
+	column TimeDuration
+		dataType: double
+		lineageTag: d73e8f89-a741-430f-98c5-931e37823897
+		summarizeBy: sum
+		sourceColumn: TimeDuration
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Tempo
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 2d51d224-8f29-4f54-b101-5b2e14ca11c4
+		summarizeBy: none
+		sourceColumn: Tempo
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'Hora Número'
+		dataType: int64
+		formatString: 0
+		lineageTag: 148a1c2e-b9c4-488a-8e98-e922b4fee3bc
+		summarizeBy: sum
+		sourceColumn: Hora Número
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Minuto Número'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4519adc2-818b-473c-9434-7934a1e2616b
+		summarizeBy: sum
+		sourceColumn: Minuto Número
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Segundo Número'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9b6e3dd6-adc7-4a76-a9d1-b6bb5cab61e9
+		summarizeBy: sum
+		sourceColumn: Segundo Número
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hora Minuto'
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 50b147c2-3ae8-45cf-9f84-35ac9fcfc7ee
+		summarizeBy: none
+		sourceColumn: Hora Minuto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column AMPM
+		dataType: string
+		lineageTag: dd64ca3f-5847-4dad-a213-ede0bbae5c42
+		summarizeBy: none
+		sourceColumn: AMPM
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hora
+		dataType: string
+		lineageTag: babc8338-cbb6-410c-b89e-852439a2dd38
+		summarizeBy: none
+		sourceColumn: Hora
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hourly Quartile'
+		dataType: string
+		lineageTag: 6e5a266b-4b12-4dac-bb02-74dc544091d4
+		summarizeBy: none
+		sourceColumn: Hourly Quartile
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hourly Quartile Sort'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3361d9b2-a186-429b-83da-23c85381e4f8
+		summarizeBy: sum
+		sourceColumn: Hourly Quartile Sort
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_hora = m
+		mode: import
+		source = ```
+				let
+				    SecList = {0..86399},
+				    SecTable = Table.FromList(SecList, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+				    SecType = Table.TransformColumnTypes(SecTable,{{"Column1", Int64.Type}}),
+				    SecName = Table.RenameColumns(SecType,{{"Column1", "Segundo"}}),
+				    TimeDurCol = Table.AddColumn(SecName,"TimeDuration", each #duration(0,0,0,[Segundo]), type duration),
+				    TimeCol = Table.AddColumn(TimeDurCol, "Tempo", each #time(Duration.Hours([TimeDuration]),Duration.Minutes([TimeDuration]),Duration.Seconds([TimeDuration])), type time),
+				    HourCol = Table.AddColumn(TimeCol, "Hora Número", each Time.Hour([Tempo]), Int64.Type),
+				    MinuteCol = Table.AddColumn(HourCol, "Minuto Número", each Time.Minute([Tempo]), Int64.Type),
+				    SecondCol = Table.AddColumn(MinuteCol, "Segundo Número", each Time.Second([Tempo]), Int64.Type),
+				    HourMinuteCol = Table.AddColumn(SecondCol, "Hora Minuto", each #time([Hora Número],[Minuto Número],0), type time),
+				    AMPMCol = Table.AddColumn(HourMinuteCol,"AMPM", each if [Segundo] < 43200 then "AM" else "PM", type text),
+				    HourNmCol = Table.AddColumn(AMPMCol, "Hora", each 
+				        if [Hora Número] = 0 then "12 AM"
+				        else if [Hora Número] >= 1 and [Hora Número] <= 11 then Number.ToText([Hora Número]) & " AM" 
+				        else if [Hora Número] = 12 then "12 PM"
+				        else if [Hora Número] >= 13 then Number.ToText([Hora Número] - 12) & " PM"  
+				        else "Unknown", type text),
+				    HourlyQuartileCol = 
+				        Table.AddColumn(HourNmCol, "Hourly Quartile", each 
+				            if        [Hora Número] >= 0 and [Hora Número] <= 5 then "12AM to 6AM"
+				            else if   [Hora Número] >= 6 and [Hora Número] <= 11 then "6AM to 12PM"
+				            else if   [Hora Número] >= 12 and [Hora Número] <= 17  then "12PM to 6PM"
+				            else if   [Hora Número] >= 18 and [Hora Número] <= 23 then "6PM to 12AM"
+				            else "Unknown", type text
+				            ),
+				    HourlyQuartileSortCol = 
+				        Table.AddColumn(HourlyQuartileCol, "Hourly Quartile Sort", each 
+				            if        [Hora Número] >= 0 and [Hora Número] <= 5 then 1
+				            else if   [Hora Número] >= 6 and [Hora Número] <= 11 then 2
+				            else if   [Hora Número] >= 12 and [Hora Número] <= 17  then 3
+				            else if   [Hora Número] >= 18 and [Hora Número] <= 23 then 4
+				            else 5, Int64.Type
+				        )
+				in
+				    HourlyQuartileSortCol
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,89 @@
+table dim_customers
+	lineageTag: c37977c3-0b35-4d1b-8f32-0d73b7234387
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 178b5213-5a8b-4ae6-a4ff-093d99790cfd
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column idCustomer
+		dataType: string
+		lineageTag: 6ce38169-93a6-48ac-9182-939ba16bb30f
+		summarizeBy: none
+		sourceColumn: idCustomer
+
+		annotation SummarizationSetBy = Automatic
+
+	column prefixo
+		dataType: int64
+		formatString: 0
+		lineageTag: 44f6ca1e-4a77-415f-bc9f-ab38e9112bba
+		summarizeBy: none
+		sourceColumn: prefixo
+
+		annotation SummarizationSetBy = Automatic
+
+	column cep
+		dataType: string
+		lineageTag: c3e941ff-c9ff-4212-864a-395577ed184c
+		dataCategory: PostalCode
+		summarizeBy: none
+		sourceColumn: cep
+
+		annotation SummarizationSetBy = Automatic
+
+	column bairro
+		dataType: string
+		lineageTag: 31b7cf44-e0fb-40d8-8ae6-f9a60bf0e74d
+		dataCategory: Address
+		summarizeBy: none
+		sourceColumn: bairro
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado
+		dataType: string
+		lineageTag: b16faa0f-ca81-4b4c-9e95-9799235ce4b7
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf
+		dataType: string
+		lineageTag: eee39f06-cbdb-456d-b7cf-dee0e22327ea
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column regiao
+		dataType: string
+		lineageTag: 2598df3f-fe8d-472a-bcc2-7478b47085d2
+		summarizeBy: none
+		sourceColumn: regiao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_customers = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("localhost", "dw_analitycs_olist", [ReturnSingleDatabase=true, HierarchicalNavigation=true]),
+				    dw_analitycs_olist = Fonte{[Schema="dw_analitycs_olist"]}[Data],
+				    dim_customers1 = dw_analitycs_olist{[Name="dim_customers"]}[Data],
+				    #"Colunas Removidas" = Table.RemoveColumns(dim_customers1,{"dw_analitycs_olist.fato_orders"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Removidas",{{"id", Int64.Type}, {"idCustomer", type text}, {"prefixo", Int64.Type}, {"cep", type text}, {"bairro", type text}, {"estado", type text}, {"uf", type text}, {"regiao", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

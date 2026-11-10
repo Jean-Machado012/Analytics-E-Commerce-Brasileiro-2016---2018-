@@ -1,0 +1,126 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 374.90051300000027,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 404.11126029118793,
+            "y": 69.056025143605183
+          },
+          "nodeIndex": "dim_customers",
+          "nodeLineageTag": "c37977c3-0b35-4d1b-8f32-0d73b7234387",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 742.54785293769692,
+            "y": 126.43694564739984
+          },
+          "nodeIndex": "dim_products",
+          "nodeLineageTag": "4b7f16e5-7852-45a7-8564-f315dccf2b2d",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1028.6944421367596,
+            "y": 87.136873407118713
+          },
+          "nodeIndex": "dim_sellers",
+          "nodeLineageTag": "fb7e94bc-3024-442a-9da7-a5a45e2cccc6",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 769.61268142557924,
+            "y": 535.80770773653853
+          },
+          "nodeIndex": "fato_orders",
+          "nodeLineageTag": "a424b0ec-af1f-4bb1-ad17-1931c279ec8a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1219.569442828908,
+            "y": 548.08589743511743
+          },
+          "nodeIndex": "fato_reviews",
+          "nodeLineageTag": "dd18b6a9-55ee-40c5-a186-34e05f2bb0e9",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1338.1599391099473,
+            "y": 82.895922520381518
+          },
+          "nodeIndex": "dim_calendario",
+          "nodeLineageTag": "434d0c95-0283-496d-85b7-1d562191c815",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1645.538487,
+            "y": 76.165505047868379
+          },
+          "nodeIndex": "dim_hora",
+          "nodeLineageTag": "b6479752-79ae-49a2-a841-efcbf86665d1",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1525.4272267088122,
+            "y": 354.3945163443351
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "afafd912-13e4-4148-9034-6634661cfc66",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 56.447393005377741,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

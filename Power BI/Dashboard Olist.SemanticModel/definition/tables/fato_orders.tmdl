@@ -1,0 +1,230 @@
+table fato_orders
+	lineageTag: a424b0ec-af1f-4bb1-ad17-1931c279ec8a
+
+	column idOrder
+		dataType: string
+		lineageTag: 45530848-b82d-4b3a-bb25-79a666a6716d
+		summarizeBy: none
+		sourceColumn: idOrder
+
+		annotation SummarizationSetBy = Automatic
+
+	column idCustomer
+		dataType: int64
+		formatString: 0
+		lineageTag: fc9c3994-03ed-4598-a822-bb8ece1432ab
+		summarizeBy: none
+		sourceColumn: idCustomer
+
+		annotation SummarizationSetBy = Automatic
+
+	column idSeller
+		dataType: int64
+		formatString: 0
+		lineageTag: 1cc2a6f8-8108-4616-8102-35172a1178a1
+		summarizeBy: none
+		sourceColumn: idSeller
+
+		annotation SummarizationSetBy = Automatic
+
+	column idProduto
+		dataType: int64
+		formatString: 0
+		lineageTag: 55a3f185-d941-4bcf-ac70-cf6f1eb4e74a
+		summarizeBy: none
+		sourceColumn: idProduto
+
+		annotation SummarizationSetBy = Automatic
+
+	column qtdItens
+		dataType: int64
+		formatString: 0
+		lineageTag: 087f3e00-f374-477c-8683-bf160c3c45c3
+		summarizeBy: sum
+		sourceColumn: qtdItens
+
+		annotation SummarizationSetBy = Automatic
+
+	column price
+		dataType: double
+		lineageTag: 6c71908d-6e9e-4256-aeee-bed95b0f847a
+		summarizeBy: sum
+		sourceColumn: price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column valor_frete
+		dataType: double
+		lineageTag: 9809c9cc-86df-4732-8bb4-7e3fbcb922a9
+		summarizeBy: sum
+		sourceColumn: valor_frete
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column data_compra
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: e0aa1cc5-1fb8-475a-9a41-642a07604567
+		summarizeBy: none
+		sourceColumn: data_compra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hora_compra
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 947324e6-5e46-4346-87dd-7ac01f0b515f
+		summarizeBy: none
+		sourceColumn: hora_compra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column data_pagamento
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f5ba64d1-b7fe-4d13-a412-65564443b546
+		summarizeBy: none
+		sourceColumn: data_pagamento
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hora_pagamento
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 2d4d7945-eced-4bf6-b9ec-06d2ec5ea5e6
+		summarizeBy: none
+		sourceColumn: hora_pagamento
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column data_envio_logistica
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 98a8de71-bf11-45f0-bdc2-1b0f25b8fc2b
+		summarizeBy: none
+		sourceColumn: data_envio_logistica
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hora_envio_logistica
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: feb36a57-0806-482c-9c09-1e8d4cf1eb6d
+		summarizeBy: none
+		sourceColumn: hora_envio_logistica
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column data_limite_ordem_logistica
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6a2d2225-edf7-41a0-9150-c0c00fdce284
+		summarizeBy: none
+		sourceColumn: data_limite_ordem_logistica
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hora_limite_ordem_logistica
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 35b27942-9054-43d4-8265-9871bd07da80
+		summarizeBy: none
+		sourceColumn: hora_limite_ordem_logistica
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column data_prevista_entrega_customer
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ea7a3619-3dd3-4c6e-a0ce-cd5d3348f3a2
+		summarizeBy: none
+		sourceColumn: data_prevista_entrega_customer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column data_recebido_customer
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a71e2a9d-a8fa-463a-82d7-73971e556a27
+		summarizeBy: none
+		sourceColumn: data_recebido_customer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hora_recebido_customer
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: afc5254a-f8e6-484e-b77e-83d56dd86648
+		summarizeBy: none
+		sourceColumn: hora_recebido_customer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column qtd_methods_payments
+		dataType: int64
+		formatString: 0
+		lineageTag: d7b684a7-abd7-400f-8e77-133b1142fbfc
+		summarizeBy: sum
+		sourceColumn: qtd_methods_payments
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_type
+		dataType: string
+		lineageTag: 200b1426-f581-4563-96d5-4233421891cd
+		summarizeBy: none
+		sourceColumn: payment_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column qtd_parcelada
+		dataType: int64
+		formatString: 0
+		lineageTag: 5304b0f3-2f63-482b-900f-407a43cb6860
+		summarizeBy: sum
+		sourceColumn: qtd_parcelada
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_orders = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("localhost", "dw_analitycs_olist", [ReturnSingleDatabase=true, HierarchicalNavigation=true]),
+				    dw_analitycs_olist = Fonte{[Schema="dw_analitycs_olist"]}[Data],
+				    fato_orders1 = dw_analitycs_olist{[Name="fato_orders"]}[Data],
+				    #"Colunas Removidas" = Table.RemoveColumns(fato_orders1,{"dw_analitycs_olist.dim_customers", "dw_analitycs_olist.dim_products", "dw_analitycs_olist.dim_sellers", "id"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Removidas",{ {"idOrder", type text}, {"idCustomer", Int64.Type}, {"idSeller", Int64.Type}, {"idProduto", Int64.Type}, {"qtdItens", Int64.Type}, {"price", type number}, {"valor_frete", type number}, {"data_compra", type date}, {"hora_compra", type time}, {"data_pagamento", type date}, {"hora_pagamento", type time}, {"data_envio_logistica", type date}, {"hora_envio_logistica", type time}, {"data_limite_ordem_logistica", type date}, {"hora_limite_ordem_logistica", type time}, {"data_prevista_entrega_customer", type date}, {"data_recebido_customer", type date}, {"hora_recebido_customer", type time}, {"qtd_methods_payments", Int64.Type}, {"payment_type", type text}, {"qtd_parcelada", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

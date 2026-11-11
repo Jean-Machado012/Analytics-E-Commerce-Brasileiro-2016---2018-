@@ -10,10 +10,6 @@ relationship 082bf6d3-8dcf-4351-2984-7833a6047b90
 	fromColumn: fato_reviews.answer_time
 	toColumn: dim_hora.Tempo
 
-relationship 07267328-a3dd-f4ca-5cd0-bd7020c93598
-	fromColumn: fato_orders.idCustomer
-	toColumn: dim_customers.id
-
 relationship 5401444d-5f55-2e66-3f8f-83b76b3c0f68
 	fromColumn: fato_orders.idSeller
 	toColumn: dim_sellers.id
@@ -25,4 +21,9 @@ relationship 4ca62be2-32ba-24ff-13fc-a1a756f6e3bd
 relationship 52239575-8405-7159-91f3-b77ed6829e4d
 	fromColumn: fato_orders.hora_compra
 	toColumn: dim_hora.Tempo
+
+relationship 2a83c3c6-a1a2-d467-15a9-56de1490da25
+	toCardinality: many
+	fromColumn: fato_orders.idCustomer
+	toColumn: dim_customers.idCustomer
 

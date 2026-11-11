@@ -2,10 +2,12 @@
 
 CREATE OR REPLACE VIEW staging_analitycs_olist.vw_dim_customers
 AS (
-	SELECT 	DISTINCT(A.customer_id)				AS 'idCustomer',
+	SELECT 	DISTINCT(A.customer_unique_id)		AS 'idCustomer',
+			A.customer_id						AS 'idOrder',
 			A.customer_zip_code_prefix			AS 'prefix',
 			C.cep,
 			C.bairro,
+            A.customer_city						AS 'cidade',
 			C.estado,
 			A.customer_state					AS 'UF',
 			C.regiao
@@ -14,6 +16,8 @@ AS (
 		ON A.customer_zip_code_prefix = B.zip_code_prefix
 	LEFT JOIN staging_analitycs_olist.st_api_enderecos	C
 		ON A.customer_zip_code_prefix = C.prefix
+	LEFT JOIN staging_analitycs_olist.st_orders			D
+		ON A.customer_id = D.customer_id
 );
 
     

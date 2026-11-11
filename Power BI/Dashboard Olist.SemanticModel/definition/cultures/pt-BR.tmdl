@@ -5940,7 +5940,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "% | Taxa Recompra"
+			          "ConceptualProperty": "% | Taxa Recorrencia"
 			        }
 			      },
 			      "State": "Generated",

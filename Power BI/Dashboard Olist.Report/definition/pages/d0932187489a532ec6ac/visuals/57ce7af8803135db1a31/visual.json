@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "57ce7af8803135db1a31",
   "position": {
-    "x": 71.77952336573027,
-    "y": 0,
+    "x": 1119.0243642657438,
+    "y": 360.73811742777264,
     "z": 5000,
-    "height": 139.87804553321797,
-    "width": 360.73811742777264,
+    "height": 699.3902276660898,
+    "width": 776.6912528291839,
     "tabOrder": 5000
   },
   "visual": {
@@ -205,7 +205,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "106.65739884665517D"
+                  "Value": "97.42469578395975D"
                 }
               }
             }
@@ -242,7 +242,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "110.20503499449063D"
+                  "Value": "102.85639198822759D"
                 }
               }
             }
@@ -279,7 +279,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "106.44798740897957D"
+                  "Value": "97.28331464243959D"
                 }
               }
             }
@@ -316,7 +316,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "115.65052928887386D"
+                  "Value": "102.72802795859538D"
                 }
               }
             }
@@ -353,7 +353,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "102.75348952675877D"
+                  "Value": "89.83864900099199D"
                 }
               }
             }
@@ -390,7 +390,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "102.80163579860903D"
+                  "Value": "95.42530098780038D"
                 }
               }
             }
@@ -463,6 +463,28 @@
       "columnHeaders": [
         {
           "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'d1389acb9aec4e7729ec'"
+                }
+              }
+            }
+          }
         }
       ]
     },

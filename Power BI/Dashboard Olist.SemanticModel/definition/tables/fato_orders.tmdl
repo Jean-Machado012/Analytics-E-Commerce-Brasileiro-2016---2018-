@@ -10,8 +10,7 @@ table fato_orders
 		annotation SummarizationSetBy = Automatic
 
 	column idCustomer
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: fc9c3994-03ed-4598-a822-bb8ece1432ab
 		summarizeBy: none
 		sourceColumn: idCustomer
@@ -220,7 +219,7 @@ table fato_orders
 				    dw_analitycs_olist = Fonte{[Schema="dw_analitycs_olist"]}[Data],
 				    fato_orders1 = dw_analitycs_olist{[Name="fato_orders"]}[Data],
 				    #"Colunas Removidas" = Table.RemoveColumns(fato_orders1,{"dw_analitycs_olist.dim_customers", "dw_analitycs_olist.dim_products", "dw_analitycs_olist.dim_sellers", "id"}),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Removidas",{ {"idOrder", type text}, {"idCustomer", Int64.Type}, {"idSeller", Int64.Type}, {"idProduto", Int64.Type}, {"qtdItens", Int64.Type}, {"price", type number}, {"valor_frete", type number}, {"data_compra", type date}, {"hora_compra", type time}, {"data_pagamento", type date}, {"hora_pagamento", type time}, {"data_envio_logistica", type date}, {"hora_envio_logistica", type time}, {"data_limite_ordem_logistica", type date}, {"hora_limite_ordem_logistica", type time}, {"data_prevista_entrega_customer", type date}, {"data_recebido_customer", type date}, {"hora_recebido_customer", type time}, {"qtd_methods_payments", Int64.Type}, {"payment_type", type text}, {"qtd_parcelada", Int64.Type}})
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Removidas",{ {"idOrder", type text}, {"idCustomer", type text}, {"idSeller", Int64.Type}, {"idProduto", Int64.Type}, {"qtdItens", Int64.Type}, {"price", type number}, {"valor_frete", type number}, {"data_compra", type date}, {"hora_compra", type time}, {"data_pagamento", type date}, {"hora_pagamento", type time}, {"data_envio_logistica", type date}, {"hora_envio_logistica", type time}, {"data_limite_ordem_logistica", type date}, {"hora_limite_ordem_logistica", type time}, {"data_prevista_entrega_customer", type date}, {"data_recebido_customer", type date}, {"hora_recebido_customer", type time}, {"qtd_methods_payments", Int64.Type}, {"payment_type", type text}, {"qtd_parcelada", Int64.Type}})
 				in
 				    #"Tipo Alterado"
 

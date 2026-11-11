@@ -6,7 +6,7 @@
     "y": 202.45506590334179,
     "z": 0,
     "height": 730.67873785115171,
-    "width": 1558.9040074557317,
+    "width": 1019.6373319131941,
     "tabOrder": 0
   },
   "visual": {
@@ -62,6 +62,34 @@
               },
               "queryRef": "Medidas.% | Variacao Faturamento Mensal 2016",
               "nativeQueryRef": "% | Variacao Faturamento Mensal 2016"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "% | Variacao Faturamento Mensal 2017"
+                }
+              },
+              "queryRef": "Medidas.% | Variacao Faturamento Mensal 2017",
+              "nativeQueryRef": "% | Variacao Faturamento Mensal 2017"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "% | Variacao Faturamento Mensal 2018"
+                }
+              },
+              "queryRef": "Medidas.% | Variacao Faturamento Mensal 2018",
+              "nativeQueryRef": "% | Variacao Faturamento Mensal 2018"
             }
           ]
         }

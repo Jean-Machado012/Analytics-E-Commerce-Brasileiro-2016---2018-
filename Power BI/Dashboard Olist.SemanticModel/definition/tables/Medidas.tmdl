@@ -130,10 +130,11 @@ table Medidas
 			    [$ | Faturamento],
 			    PREVIOUSYEAR(dim_calendario[Data])
 			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: Temporais\Last Year
 		lineageTag: c684b471-76d4-4b1f-bd87-59f5884a6bb3
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	measure '$ LY | Frete' =
 			
@@ -163,10 +164,11 @@ table Medidas
 			    [$ | Preco Medio],
 			    PREVIOUSYEAR(dim_calendario[Data])
 			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: Temporais\Last Year
 		lineageTag: 4e14dadb-0595-4b41-a1c6-c27c9dd8b02b
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	measure '$ LY | Ticket Medio' =
 			
@@ -174,10 +176,11 @@ table Medidas
 			    [$ | Ticket Medio],
 			    PREVIOUSYEAR(dim_calendario[Data])
 			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: Temporais\Last Year
 		lineageTag: 3aa6149e-bcfd-4a8d-87e8-552b7b771f1d
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	measure '# LM | Itens Atendimento' =
 			
@@ -226,10 +229,11 @@ table Medidas
 			    [$ | Faturamento],
 			    PREVIOUSMONTH(dim_calendario[Data])
 			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: Temporais\Last Month
 		lineageTag: daa56f5f-04a0-464d-87d0-4b487b4496cd
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	measure '$ LM | Frete' =
 			
@@ -270,12 +274,13 @@ table Medidas
 			    [$ | Ticket Medio],
 			    PREVIOUSMONTH(dim_calendario[Data])
 			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: Temporais\Last Month
 		lineageTag: 04e94cd1-2fc0-43ef-b5d3-6c4bc4058a38
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
-	measure '% | Taxa Recompra' = ```
+	measure '% | Taxa Recorrencia' = ```
 			
 			VAR vClienteRecorrente = 
 			COUNTROWS(
@@ -418,14 +423,15 @@ table Medidas
 			    PREVIOUSMONTH(fato_orders[data_compra])
 			)
 			RETURN
-			IF(
-			    vMes = 9,
-			    0,
-			    DIVIDE(
-			        vFatAtual -vFatAnterior,
-			        vFatAnterior
-			    )
-			)
+			vFatAtual
+			// IF(
+			//     vMes = 9,
+			//     0,
+			//     DIVIDE(
+			//         vFatAtual - vFatAnterior,
+			//         vFatAnterior
+			//     )
+			// )
 			```
 		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Temporais
@@ -433,31 +439,120 @@ table Medidas
 
 	measure '% | Variacao Faturamento Mensal 2017' = ```
 			
-			VAR vMes = MONTH(MAX(dim_calendario[Data]))
+			VAR vMes = 
+			CALCULATE(
+			    MONTH(MAX(fato_orders[data_compra])),
+			    YEAR(fato_orders[data_compra]) = 2017
+			)
 			VAR vFatAtual = 
 			CALCULATE(
 			    [$ | Faturamento],
-			    dim_calendario[Ano] = 2017
+			    YEAR(fato_orders[data_compra]) = 2017
 			)
 			VAR vFatAnterior = 
 			CALCULATE(
 			    vFatAtual,
-			    PREVIOUSMONTH(dim_calendario[Data])
+			    PREVIOUSMONTH(fato_orders[data_compra])
 			)
 			RETURN
-			IF(
-			    vMes = 1,
-			    0,
-			    DIVIDE(
-			        vFatAtual -vFatAnterior,
-			        vFatAnterior
-			    )
-			)
+			vFatAtual
+			// IF(
+			//     vMes = 1,
+			//     0,
+			//     DIVIDE(
+			//         vFatAtual - vFatAnterior,
+			//         vFatAnterior
+			//     )
+			// )
 			```
 		displayFolder: Temporais
 		lineageTag: 73e87f13-cac3-4077-85bf-d23ae24d35fd
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% | Variacao Faturamento Mensal 2018' = ```
+			
+			VAR vMes = 
+			CALCULATE(
+			    MONTH(MAX(fato_orders[data_compra])),
+			    YEAR(fato_orders[data_compra]) = 2018
+			)
+			VAR vFatAtual = 
+			CALCULATE(
+			    [$ | Faturamento],
+			    YEAR(fato_orders[data_compra]) = 2018
+			)
+			VAR vFatAnterior = 
+			CALCULATE(
+			    vFatAtual,
+			    PREVIOUSMONTH(fato_orders[data_compra])
+			)
+			RETURN
+			vFatAtual
+			// IF(
+			//     vMes = 1,
+			//     0,
+			//     DIVIDE(
+			//         vFatAtual - vFatAnterior,
+			//         vFatAnterior
+			//     )
+			// )
+			```
+		displayFolder: Temporais
+		lineageTag: 35fb32e0-3c7d-403e-b574-76305e955dce
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '# | Qtd Clientes Novos' =
+			
+			VAR vClientesAtuais = VALUES(fato_orders[idCustomer])
+			VAR vClientesAntigos =
+			CALCULATETABLE(
+			    VALUES(fato_orders[idCustomer]),
+			    FILTER(
+			        ALL(dim_calendario[Data]),
+			        dim_calendario[Data] < MIN(dim_calendario[Data])
+			    )
+			)
+			VAR vClienteNovos = EXCEPT(vClientesAtuais, vClientesAntigos)
+			RETURN
+			COUNTROWS(vClienteNovos)
+		formatString: #,0
+		lineageTag: 4674ac41-6fa4-47f4-9e0d-80f2e6b53ba2
+
+	measure '$ | Ticket Medio Cliente' =
+			
+			DIVIDE(
+			    [$ | Ticket Medio],
+			    [# | Qtd Clientes Ano]
+			)
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: Gerais
+		lineageTag: 67303b87-e60d-49f5-9c85-2e8f14fe5deb
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ | Faturamento Clientes Novos' =
+			
+			VAR vClientesAtuais = VALUES(fato_orders[idCustomer])
+			VAR vClientesAntigos =
+			CALCULATETABLE(
+			    VALUES(fato_orders[idCustomer]),
+			    FILTER(
+			        ALL(dim_calendario[Data]),
+			        dim_calendario[Data] < MIN(dim_calendario[Data])
+			    )
+			)
+			VAR vClientesNovos = EXCEPT(vClientesAtuais, vClientesAntigos)
+			RETURN
+			CALCULATE(
+			    [$ | Faturamento],
+			    vClientesNovos
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 55519d96-6d69-4ae5-a9d9-166e0ffe3c07
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	column 'Coluna 1'
 		dataType: string

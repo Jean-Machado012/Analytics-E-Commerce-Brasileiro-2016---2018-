@@ -23,7 +23,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "% | Taxa Recompra"
+                  "Property": "% | Taxa Recorrencia"
                 }
               },
               "queryRef": "Medidas.% | Taxa Recompra",
@@ -84,7 +84,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "% | Taxa Recompra"
+                "Property": "% | Taxa Recorrencia"
               }
             },
             "direction": "Descending"

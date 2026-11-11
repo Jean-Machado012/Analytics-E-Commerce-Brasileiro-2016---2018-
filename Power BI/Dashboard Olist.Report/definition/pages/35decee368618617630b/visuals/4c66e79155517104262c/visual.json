@@ -1,0 +1,137 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "4c66e79155517104262c",
+  "position": {
+    "x": 138.03754493409667,
+    "y": 592.641192917055,
+    "z": 0,
+    "height": 469.3276527759287,
+    "width": 1170.5583810411397,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_calendario"
+                    }
+                  },
+                  "Property": "NomeMes"
+                }
+              },
+              "queryRef": "dim_calendario.NomeMes",
+              "nativeQueryRef": "NomeMes"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "# | Qtd Clientes Ano"
+                }
+              },
+              "queryRef": "Medidas.# | Qtd Clientes Ano",
+              "nativeQueryRef": "# | Qtd Clientes Ano"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Faturamento"
+                }
+              },
+              "queryRef": "Medidas.$ | Faturamento",
+              "nativeQueryRef": "$ | Faturamento"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "# | Qtd Clientes Novos"
+                }
+              },
+              "queryRef": "Medidas.# | Qtd Clientes Novos",
+              "nativeQueryRef": "# | Qtd Clientes Novos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Faturamento Clientes Novos"
+                }
+              },
+              "queryRef": "Medidas.$ | Faturamento Clientes Novos",
+              "nativeQueryRef": "$ | Faturamento Clientes Novos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "% | Taxa Recorrencia"
+                }
+              },
+              "queryRef": "Medidas.% | Taxa Recompra",
+              "nativeQueryRef": "% | Taxa Recorrencia"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Ticket Medio"
+                }
+              },
+              "queryRef": "Medidas.$ | Ticket Medio",
+              "nativeQueryRef": "$ | Ticket Medio"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

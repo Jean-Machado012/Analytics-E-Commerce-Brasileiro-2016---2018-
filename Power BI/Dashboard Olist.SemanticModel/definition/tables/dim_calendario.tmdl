@@ -3,7 +3,7 @@ table dim_calendario
 
 	column Data
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 0381c945-0d80-43b6-85b5-16e3ce8cab30
 		summarizeBy: none
 		sourceColumn: Data
@@ -26,6 +26,9 @@ table dim_calendario
 		lineageTag: 822d8a81-fddc-4e37-93cb-c303de888e35
 		summarizeBy: none
 		sourceColumn: NomeMes
+		sortByColumn: MesNum
+
+		changedProperty = SortByColumn
 
 		annotation SummarizationSetBy = Automatic
 
@@ -59,7 +62,7 @@ table dim_calendario
 
 	column InicioMes
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 4e199827-001c-4e66-9a2c-a83434075b46
 		summarizeBy: none
 		sourceColumn: InicioMes

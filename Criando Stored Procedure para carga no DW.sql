@@ -12,9 +12,11 @@ BEGIN
 	CREATE TABLE IF NOT EXISTS dw_analitycs_olist.dim_customers(
 		id		   INT AUTO_INCREMENT,
 		idCustomer VARCHAR(100),
+        idOrder	   VARCHAR(100),
 		prefixo    VARCHAR(9),
 		cep		   VARCHAR(9),
 		bairro	   VARCHAR(80),
+        cidade	   VARCHAR(100),
 		estado	   VARCHAR(50),
 		uf 		   CHAR(2),
 		regiao	   VARCHAR(30),
@@ -57,11 +59,11 @@ BEGIN
 		INDEX idx_reviews (idReview)
 	);
 
-
+	
 	CREATE TABLE IF NOT EXISTS dw_analitycs_olist.fato_orders(
 		id									INT AUTO_INCREMENT,
 		idOrder								VARCHAR(100),
-		idCustomer							INT,
+		idCustomer							VARCHAR(100),
 		idSeller							INT,
 		idProduto							INT,
 		qtdItens							SMALLINT,
@@ -83,7 +85,7 @@ BEGIN
 		qtd_parcelada						SMALLINT,
 		PRIMARY KEY(id),
 		CONSTRAINT fk_customer_order
-		FOREIGN KEY(idCustomer) 			REFERENCES dw_analitycs_olist.dim_customers(id),
+		FOREIGN KEY(idCustomer) 			REFERENCES dw_analitycs_olist.dim_customers(idCustomer),
 		CONSTRAINT fk_seller_order
 		FOREIGN KEY(idSeller)				REFERENCES dw_analitycs_olist.dim_sellers(id),
 		CONSTRAINT fk_product_order
@@ -108,17 +110,21 @@ BEGIN
     
     INSERT INTO dw_analitycs_olist.dim_customers(
 		idCustomer,
+        idOrder,
         prefixo,
         cep,
         bairro,
+        cidade,
         estado,
         uf,
         regiao
 	)
     SELECT	idCustomer,
+			idOrder,
 			prefix,
             cep,
             bairro,
+            cidade,
             estado,
             UF,
             regiao
@@ -192,7 +198,7 @@ BEGIN
         qtd_parcelada
 	)
     SELECT	A.idOrder,
-			B.id,
+			B.idCustomer,
 			C.id,
 			D.id,
 			A.qtdItens,
@@ -214,7 +220,7 @@ BEGIN
 			A.qtd_parcelada
 		FROM staging_analitycs_olist.vw_fato_orders		A
         LEFT JOIN dw_analitycs_olist.dim_customers		B
-			ON A.idCustomer = B.idCustomer
+			ON A.idCustomer = B.idOrder
 		LEFT JOIN dw_analitycs_olist.dim_sellers		C
 			ON A.idSeller = C.idSeller
 		LEFT JOIN dw_analitycs_olist.dim_products		D

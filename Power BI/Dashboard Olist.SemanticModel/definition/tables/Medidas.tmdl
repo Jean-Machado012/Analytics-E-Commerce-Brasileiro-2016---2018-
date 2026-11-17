@@ -14,7 +14,7 @@ table Medidas
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure '# | Qtd Itens' = SUM(fato_orders[qtdItens])
-		formatString: 0
+		formatString: #,0
 		displayFolder: Gerais
 		lineageTag: c992b67b-b00d-4249-aa9a-0b179a42d34c
 
@@ -39,7 +39,7 @@ table Medidas
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	measure '# | Qtd Ordens' = DISTINCTCOUNT(fato_orders[idOrder])
-		formatString: 0
+		formatString: #,0
 		displayFolder: Gerais
 		lineageTag: d5a67226-75b3-49dd-af0e-c9d611bd649c
 
@@ -553,6 +553,188 @@ table Medidas
 		lineageTag: 55519d96-6d69-4ae5-a9d9-166e0ffe3c07
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Tempo Medio Compra / Entrega' =
+			
+			VAR vTempo =
+			AVERAGEX(
+			    fato_orders,
+			    DATEDIFF(
+			        fato_orders[data_compra],
+			        fato_orders[data_recebido_customer],
+			        DAY
+			    )
+			)
+			VAR vExtensao =
+			IF(
+			    vTempo = 1,
+			    " dia",
+			    " dias"
+			)
+			RETURN
+			FORMAT(vTempo, "0 dias")
+		displayFolder: Temporais\Tempo Medio
+		lineageTag: 30bf7e26-8aa2-4b8d-99e3-f2f76a64c0f2
+
+	measure 'Tempo Medio Pagamento / Prev Entrega' =
+			
+			VAR vTempo =
+			    AVERAGEX(
+			        fato_orders,
+			        DATEDIFF(
+			            fato_orders[data_pagamento],
+			            fato_orders[data_prevista_entrega_customer],
+			            DAY
+			        )
+			    )
+			RETURN
+			FORMAT(vTempo, "0 dias")
+		displayFolder: Temporais\Tempo Medio
+		lineageTag: 9f137e48-654a-40eb-9db4-53fb466c733d
+
+	measure 'Tempo Medio Previsao / Entrega' =
+			
+			VAR vTempo =
+			AVERAGEX(
+			    fato_orders,
+			    DATEDIFF(
+			        fato_orders[data_prevista_entrega_customer],
+			        fato_orders[data_recebido_customer],
+			        DAY
+			    )
+			)
+			RETURN
+			FORMAT(vTempo, "0 dias")
+		displayFolder: Temporais\Tempo Medio
+		lineageTag: 46ce52ac-5b37-4db3-969b-6cced1de8f55
+
+	measure 'Tempo Medio Pagamento / Recebido Customer' =
+			
+			VAR vTempo =
+			AVERAGEX(
+			    fato_orders,
+			    DATEDIFF(
+			        fato_orders[data_pagamento],
+			        fato_orders[data_recebido_customer],
+			        DAY
+			    )
+			)
+			RETURN
+			FORMAT(vTempo, "0 dias")
+		displayFolder: Temporais\Tempo Medio
+		lineageTag: 876184b6-7e83-430b-9101-0c3060209a5e
+
+	measure '% | Pedidos Entregues' =
+			
+			VAR vTotalPedidos = [# | Qtd Ordens]
+			VAR vPedidosEntregues =
+			CALCULATE(
+			    [# | Qtd Ordens],
+			    NOT ISBLANK(fato_orders[data_recebido_customer])
+			)
+			VAR vPerctEntregue =
+			DIVIDE(
+			    vPedidosEntregues,
+			    vTotalPedidos
+			)
+			RETURN
+			vPerctEntregue
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Logistica
+		lineageTag: ae0f19ab-2c28-4d08-9c5a-e58a9c621ca5
+
+	measure '% | Pedidos Atrasados' =
+			
+			VAR vTotalPedidos = [# | Qtd Ordens]
+			VAR vPedidosAtrasados =
+			CALCULATE(
+			    [# | Qtd Ordens],
+			    fato_orders[data_recebido_customer] > fato_orders[data_prevista_entrega_customer]
+			)
+			VAR vPercentAtrasados =
+			DIVIDE(
+			    vPedidosAtrasados,
+			    vTotalPedidos
+			)
+			RETURN
+			vPercentAtrasados
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Logistica
+		lineageTag: 0cce28a8-aede-4bbf-b288-b21544e1d074
+
+	measure '% | Pedidos Nao Entregues' =
+			
+			VAR vTotalPedidos = [# | Qtd Ordens]
+			VAR vPedidosDataBlank =
+			CALCULATE(
+			    [# | Qtd Ordens],
+			    ISBLANK(fato_orders[data_recebido_customer])
+			)
+			VAR vPerct =
+			DIVIDE(
+			    vPedidosDataBlank,
+			    vTotalPedidos
+			)
+			RETURN
+			vPerct
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Logistica
+		lineageTag: 896cd142-b061-4d1a-a783-d27ac34641b2
+
+	measure '% | Pedidos Entregues Prazo' =
+			
+			VAR vTotalPeidos = [# | Qtd Ordens]
+			VAR vPedidosPrazo =
+			CALCULATE(
+			    [# | Qtd Ordens],
+			    fato_orders[data_recebido_customer] <= fato_orders[data_prevista_entrega_customer]
+			)
+			VAR vPercet =
+			DIVIDE(
+			    vPedidosPrazo,
+			    vTotalPeidos
+			)
+			RETURN
+			vPercet
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Logistica
+		lineageTag: 6815011e-732a-4186-bc70-48d74912ed86
+
+	measure 'Tempo Medio Compra / Pagamento' =
+			
+			VAR vTempo =
+			AVERAGEX(
+			    fato_orders,
+			    DATEDIFF(
+			        fato_orders[data_compra],
+			        fato_orders[data_pagamento],
+			        DAY
+			    )
+			)
+			RETURN
+			FORMAT(vTempo, "0 dias")
+		displayFolder: Temporais\Tempo Medio
+		lineageTag: 05f15715-df93-4e93-aee4-7462ea61d7be
+
+	measure '# | Qtd Orders Atrasados' =
+			
+			CALCULATE(
+			    [# | Qtd Ordens],
+			    fato_orders[data_recebido_customer] > fato_orders[data_prevista_entrega_customer]
+			)
+		formatString: 0
+		displayFolder: Logistica
+		lineageTag: 232606fc-f32f-4c76-9a44-a99e49b7fea1
+
+	measure '# | Qtd Pedido Nao Entregues' =
+			
+			CALCULATE(
+			    [# | Qtd Ordens],
+			    ISBLANK(fato_orders[data_recebido_customer])
+			)
+		formatString: 0
+		displayFolder: Logistica
+		lineageTag: 48024187-5ae5-49c3-902e-b362a86e9a78
 
 	column 'Coluna 1'
 		dataType: string

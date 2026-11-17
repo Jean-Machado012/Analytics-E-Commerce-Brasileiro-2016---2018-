@@ -88,7 +88,7 @@ table fato_orders
 
 	column data_pagamento
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: f5ba64d1-b7fe-4d13-a412-65564443b546
 		summarizeBy: none
 		sourceColumn: data_pagamento
@@ -110,7 +110,7 @@ table fato_orders
 
 	column data_envio_logistica
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 98a8de71-bf11-45f0-bdc2-1b0f25b8fc2b
 		summarizeBy: none
 		sourceColumn: data_envio_logistica
@@ -132,7 +132,7 @@ table fato_orders
 
 	column data_limite_ordem_logistica
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 6a2d2225-edf7-41a0-9150-c0c00fdce284
 		summarizeBy: none
 		sourceColumn: data_limite_ordem_logistica
@@ -154,7 +154,7 @@ table fato_orders
 
 	column data_prevista_entrega_customer
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: ea7a3619-3dd3-4c6e-a0ce-cd5d3348f3a2
 		summarizeBy: none
 		sourceColumn: data_prevista_entrega_customer
@@ -165,7 +165,7 @@ table fato_orders
 
 	column data_recebido_customer
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: a71e2a9d-a8fa-463a-82d7-73971e556a27
 		summarizeBy: none
 		sourceColumn: data_recebido_customer

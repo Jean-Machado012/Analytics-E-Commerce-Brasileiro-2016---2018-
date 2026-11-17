@@ -363,6 +363,34 @@
             "id": "field-9e46c5f3-e1d0-5d71-1eaf-5a497d2ca9d0",
             "order": 0
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Frete Medio Pedido"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Medidas.# | Itens Atendimento",
+            "id": "field-2f86d093-f8b0-173e-981b-99a3931211ec",
+            "order": 1
+          }
         }
       ],
       "referenceLabelLayout": [
@@ -596,7 +624,7 @@
             "titleText": {
               "expr": {
                 "Literal": {
-                  "Value": "'$ Frete Médio:'"
+                  "Value": "'Frete Médio Item:'"
                 }
               }
             },
@@ -611,6 +639,35 @@
           "selector": {
             "metadata": "Medidas.# | Itens Atendimento",
             "id": "field-9e46c5f3-e1d0-5d71-1eaf-5a497d2ca9d0"
+          }
+        },
+        {
+          "properties": {
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "titleContentType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'custom'"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Frete Médio NF:'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.# | Itens Atendimento",
+            "id": "field-2f86d093-f8b0-173e-981b-99a3931211ec"
           }
         }
       ],
@@ -723,6 +780,21 @@
           "selector": {
             "metadata": "Medidas.# | Itens Atendimento",
             "id": "field-9e46c5f3-e1d0-5d71-1eaf-5a497d2ca9d0"
+          }
+        },
+        {
+          "properties": {
+            "valueFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.# | Itens Atendimento",
+            "id": "field-2f86d093-f8b0-173e-981b-99a3931211ec"
           }
         }
       ]

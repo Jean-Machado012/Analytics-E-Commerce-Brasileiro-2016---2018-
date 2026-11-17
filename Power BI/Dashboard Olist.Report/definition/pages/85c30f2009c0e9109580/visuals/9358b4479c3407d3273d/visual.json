@@ -1,37 +1,18 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "da43bae6e0d661854737",
+  "name": "9358b4479c3407d3273d",
   "position": {
-    "x": 42.331513779789645,
-    "y": 601.84369591266147,
-    "z": 1000,
-    "height": 366.25961922513648,
-    "width": 618.40820130475311,
-    "tabOrder": 1000
+    "x": 760.49475768872321,
+    "y": 698.65401057615463,
+    "z": 4,
+    "height": 351.5356144321662,
+    "width": 357.05711622953004,
+    "tabOrder": 4
   },
   "visual": {
     "visualType": "donutChart",
     "query": {
       "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "dim_calendario"
-                    }
-                  },
-                  "Property": "Final Semana"
-                }
-              },
-              "queryRef": "dim_calendario.Final Semana",
-              "nativeQueryRef": "Final Semana",
-              "active": true
-            }
-          ]
-        },
         "Y": {
           "projections": [
             {
@@ -42,11 +23,27 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "$ | Faturamento"
+                  "Property": "% | Pedidos Entregues Prazo"
                 }
               },
-              "queryRef": "Medidas.$ | Faturamento",
-              "nativeQueryRef": "$ | Faturamento"
+              "queryRef": "Medidas.% | Pedidos Entregues Prazo",
+              "nativeQueryRef": "% Entregues Prazo",
+              "displayName": "% Entregues Prazo"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "% | Pedidos Atrasados"
+                }
+              },
+              "queryRef": "Medidas.% | Pedidos Atrasados",
+              "nativeQueryRef": "% Atrasados",
+              "displayName": "% Atrasados"
             }
           ]
         }
@@ -61,7 +58,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "$ | Faturamento"
+                "Property": "% | Pedidos Entregues Prazo"
               }
             },
             "direction": "Descending"
@@ -71,7 +68,7 @@
       }
     },
     "objects": {
-      "labels": [
+      "value": [
         {
           "properties": {
             "show": {
@@ -80,18 +77,30 @@
                   "Value": "true"
                 }
               }
-            },
-            "labelDisplayUnits": {
+            }
+          }
+        }
+      ],
+      "centerBackground": [
+        {
+          "properties": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "1000000000D"
+                  "Value": "false"
                 }
               }
-            },
-            "fontSize": {
+            }
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "false"
                 }
               }
             }
@@ -111,13 +120,46 @@
           }
         }
       ],
-      "value": [
+      "dataPoint": [
         {
           "properties": {
+            "borderShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "slices": [
+        {
+          "properties": {
+            "innerRadiusRatio": {
+              "expr": {
+                "Literal": {
+                  "Value": "70L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "labelStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Data'"
+                }
+              }
+            },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "15D"
                 }
               }
             }
@@ -137,20 +179,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "slices": [
-        {
-          "properties": {
-            "innerRadiusRatio": {
-              "expr": {
-                "Literal": {
-                  "Value": "65L"
+                  "Value": "15D"
                 }
               }
             }

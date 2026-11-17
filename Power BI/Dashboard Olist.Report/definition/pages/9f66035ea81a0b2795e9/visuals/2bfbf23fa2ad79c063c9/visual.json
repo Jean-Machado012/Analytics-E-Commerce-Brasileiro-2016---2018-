@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "26be49c44aace4ae8250",
+  "name": "2bfbf23fa2ad79c063c9",
   "position": {
-    "x": 1663.8125416056453,
-    "y": 51.53401677539609,
-    "z": 3000,
-    "height": 71.77952336573027,
-    "width": 220.86007189455466,
-    "tabOrder": 3000
+    "x": 380.98362401810681,
+    "y": 495.09466116362671,
+    "z": 3,
+    "height": 62.577020370123826,
+    "width": 338.65211023831716,
+    "tabOrder": 3
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dim_calendario"
+                      "Entity": "dim_products"
                     }
                   },
-                  "Property": "Ano"
+                  "Property": "categoria"
                 }
               },
-              "queryRef": "dim_calendario.Ano",
-              "nativeQueryRef": "Ano",
+              "queryRef": "dim_products.categoria",
+              "nativeQueryRef": "categoria",
               "active": true
             }
           ]
@@ -50,15 +50,7 @@
       ],
       "general": [
         {
-          "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
+          "properties": {}
         }
       ]
     },

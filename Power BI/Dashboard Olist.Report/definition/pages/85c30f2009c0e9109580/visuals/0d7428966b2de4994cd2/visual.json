@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "45562e4010916d810cb0",
+  "name": "0d7428966b2de4994cd2",
   "position": {
-    "x": 701.230728265211,
-    "y": 51.53401677539609,
-    "z": 2000,
-    "height": 173.00705631740115,
-    "width": 944.17680734922124,
-    "tabOrder": 2000
+    "x": 245.15458993476238,
+    "y": 131.77982604679798,
+    "z": 0,
+    "height": 171.16655571827988,
+    "width": 1636.205032618826,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "% | Taxa Recorrencia"
+                  "Property": "Tempo Medio Compra / Pagamento"
                 }
               },
-              "queryRef": "Medidas.% | Taxa Recompra",
-              "nativeQueryRef": "% | Taxa Recompra"
+              "queryRef": "Medidas.Tempo Medio Compra / Pagamento",
+              "nativeQueryRef": "Tempo Medio Compra / Pagamento"
             },
             {
               "field": {
@@ -37,11 +37,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "$ | Valor Medio Itens"
+                  "Property": "Tempo Medio Compra / Entrega"
                 }
               },
-              "queryRef": "Medidas.$ | Valor Medio",
-              "nativeQueryRef": "$ | Valor Medio Itens"
+              "queryRef": "Medidas.Tempo Compra / Entrega",
+              "nativeQueryRef": "Tempo Medio Compra / Entrega"
             },
             {
               "field": {
@@ -51,11 +51,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "$ | Frete Medio Item"
+                  "Property": "Tempo Medio Pagamento / Prev Entrega"
                 }
               },
-              "queryRef": "Medidas.$ | Frete Medio",
-              "nativeQueryRef": "$ | Frete Medio Item"
+              "queryRef": "Medidas.Tempo Medio Pagamento / Prev Entrega",
+              "nativeQueryRef": "Tempo Medio Pagamento / Prev Entrega"
             },
             {
               "field": {
@@ -65,11 +65,25 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "$ | Frete Medio Pedido"
+                  "Property": "Tempo Medio Previsao / Entrega"
                 }
               },
-              "queryRef": "Medidas.$ | Frete Medio Pedido",
-              "nativeQueryRef": "$ | Frete Medio Pedido"
+              "queryRef": "Medidas.Tempo Medio Previsao / Entrega",
+              "nativeQueryRef": "Tempo Medio Previsao / Entrega"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Tempo Medio Pagamento / Recebido Customer"
+                }
+              },
+              "queryRef": "Medidas.Tempo Medio Pagamento / Recebido Customer",
+              "nativeQueryRef": "Tempo Medio Pagamento / Recebido Customer"
             }
           ]
         }
@@ -84,7 +98,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "% | Taxa Recorrencia"
+                "Property": "Tempo Medio Compra / Entrega"
               }
             },
             "direction": "Descending"
@@ -106,7 +120,7 @@
             }
           },
           "selector": {
-            "metadata": "Medidas.% | Taxa Recompra"
+            "metadata": "Medidas.Tempo Compra / Entrega"
           }
         }
       ]

@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "0ddf33a448536d256a62",
+  "name": "0522e5c6c1ba9633e5be",
   "position": {
-    "x": 920.25029956064452,
-    "y": 270.55358807082945,
-    "z": 4000,
-    "height": 388.34562641459195,
-    "width": 949.69830914658507,
-    "tabOrder": 4000
+    "x": 245.15458993476238,
+    "y": 330.55389075189743,
+    "z": 2,
+    "height": 340.49261083743846,
+    "width": 872.397283983491,
+    "tabOrder": 2
   },
   "visual": {
-    "visualType": "columnChart",
+    "visualType": "clusteredColumnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -72,67 +72,38 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "# | Qtd Ordens"
+                  "Property": "% | Pedidos Nao Entregues"
                 }
               },
-              "queryRef": "Medidas.# | Qtd Ordens",
-              "nativeQueryRef": "# | Qtd Ordens"
+              "queryRef": "Medidas.% | Pedidos Nao Entregues",
+              "nativeQueryRef": "% | Pedidos Nao Entregues"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "% | Pedidos Atrasados"
+                }
+              },
+              "queryRef": "Medidas.% | Pedidos Atrasados",
+              "nativeQueryRef": "% | Pedidos Atrasados"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "dim_calendario"
-                  }
-                },
-                "Property": "Ano"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
-      "categoryAxis": [
+      "valueAxis": [
         {
           "properties": {
-            "initialScrollPosition": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'start'"
-                }
-              }
-            },
-            "gridlineShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "gridlineThickness": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "gridlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
-                    }
-                  }
+                  "Value": "false"
                 }
               }
             }
@@ -142,65 +113,52 @@
       "labels": [
         {
           "properties": {
+            "optimizeLabelDisplay": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
-            },
-            "labelPosition": {
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
               "expr": {
                 "Literal": {
-                  "Value": "'OutsideEnd'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "enableDetailDataLabel": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "detailFontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "detailLabelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
+                  "Value": "'Top'"
                 }
               }
             }
           }
-        },
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
         {
-          "properties": {},
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
                 }
               }
-            ],
-            "highlightMatching": 1
+            }
           }
         }
       ],
-      "valueAxis": [
+      "subTitle": [
         {
           "properties": {
             "show": {

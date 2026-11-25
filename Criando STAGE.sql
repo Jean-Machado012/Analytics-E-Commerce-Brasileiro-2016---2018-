@@ -1,0 +1,331 @@
+USE staging_analitycs_olist;
+
+DELIMITER $$
+
+CREATE PROCEDURE usp_st_load()
+
+BEGIN
+
+/* ---------- Criando tabelas de STAGE caso elas não existam ---------- */
+
+
+CREATE TABLE IF NOT EXISTS st_customers(
+	customer_id VARCHAR(100),
+    customer_unique_id VARCHAR(100),
+    customer_zip_code_prefix INT,
+    customer_city VARCHAR(100),
+    customer_state VARCHAR(50),
+    INDEX idx_unique (customer_id)
+);
+
+
+CREATE TABLE IF NOT EXISTS st_geolocation(
+	zip_code_prefix INT,
+    latitude FLOAT,
+    longitude FLOAT,
+    city VARCHAR(100),
+    state VARCHAR(100)
+);
+
+
+CREATE TABLE IF NOT EXISTS st_order_items(
+	order_id VARCHAR(100),
+    order_item_id SMALLINT,
+    product_id VARCHAR(100),
+    seller_id VARCHAR(100),
+    shipping_limit_date DATETIME,
+    price FLOAT,
+    freight_value FLOAT
+);
+    
+
+CREATE TABLE IF NOT EXISTS st_order_payments(
+	order_id VARCHAR(100),
+    payment_sequential SMALLINT,
+    payment_type VARCHAR(50),
+    payment_installments SMALLINT,
+    payment_value FLOAT
+);
+
+
+CREATE TABLE IF NOT EXISTS st_order_reviews(
+	review_id VARCHAR(100),
+    order_id VARCHAR(100),
+    score INT,
+    comment_title VARCHAR(100),
+    comment_message VARCHAR(500),
+    creation_date DATETIME,
+    answer_timestamp DATETIME
+);
+
+
+CREATE TABLE IF NOT EXISTS st_orders(
+	order_id VARCHAR(100),
+    customer_id VARCHAR(100),
+    status VARCHAR(30),
+    purchase_timestamp DATETIME,
+    approved_at DATETIME,
+    delivered_carrier_date DATETIME,
+    delivered_customer_date DATETIME,
+    estimated_delivery_date DATETIME
+);
+
+
+CREATE TABLE IF NOT EXISTS st_product_category(
+	product_category_name VARCHAR(100),
+    product_category_name_english VARCHAR(100)
+);
+
+
+CREATE TABLE IF NOT EXISTS st_products(
+	product_id VARCHAR(100),
+    category_name VARCHAR(50)
+);
+
+
+CREATE TABLE IF NOT EXISTS st_sellers(
+	seller_id VARCHAR(100),
+    seller_zip_code_prefix INT,
+    seller_city VARCHAR(50),
+    seller_state VARCHAR(50)
+);
+
+
+CREATE TABLE IF NOT EXISTS st_api_enderecos(
+	prefix VARCHAR(5),
+    cep VARCHAR(9),
+    bairro VARCHAR(100),
+    estado VARCHAR(100),
+    regiao VARCHAR(20),
+    status VARCHAR(30)
+);
+
+
+
+/* ---------- Limpando área de STAGE ---------- */
+
+TRUNCATE TABLE staging_analitycs_olist.st_api_enderecos;
+TRUNCATE TABLE staging_analitycs_olist.st_customers;
+TRUNCATE TABLE staging_analitycs_olist.st_geolocation;
+TRUNCATE TABLE staging_analitycs_olist.st_order_items;
+TRUNCATE TABLE staging_analitycs_olist.st_order_payments;
+TRUNCATE TABLE staging_analitycs_olist.st_order_reviews;
+TRUNCATE TABLE staging_analitycs_olist.st_orders;
+TRUNCATE TABLE staging_analitycs_olist.st_product_category;
+TRUNCATE TABLE staging_analitycs_olist.st_products;
+TRUNCATE TABLE staging_analitycs_olist.st_sellers;
+
+/* ---------- Populando área de STAGE ---------- */
+
+INSERT INTO staging_analitycs_olist.st_customers(
+	customer_id,
+    customer_unique_id,
+    customer_zip_code_prefix,
+    customer_city,
+    customer_state
+)
+SELECT	customer_id,
+		customer_unique_id,
+		customer_zip_code_prefix,
+		customer_city,
+		customer_state
+FROM db_analitycs_olist.customers;
+
+
+
+
+INSERT INTO staging_analitycs_olist.st_geolocation(
+	zip_code_prefix,
+    latitude,
+    longitude,
+    city,
+    state
+)
+SELECT	zip_code_prefix,
+		latitude,
+		longitude,
+		city,
+		state
+FROM db_analitycs_olist.geolocation;
+
+
+
+INSERT INTO staging_analitycs_olist.st_order_items(
+	order_id,
+    order_item_id,
+    product_id,
+    seller_id,
+    shipping_limit_date,
+    price,
+    freight_value
+)
+SELECT	order_id,
+		order_item_id,
+		product_id,
+		seller_id,
+		shipping_limit_date,
+		price,
+		freight_value
+FROM db_analitycs_olist.order_items;
+
+
+
+INSERT INTO staging_analitycs_olist.st_order_payments(
+	order_id,
+    payment_sequential,
+    payment_type,
+    payment_installments,
+    payment_value
+)
+SELECT	order_id,
+		payment_sequential,
+		payment_type,
+		payment_installments,
+		payment_value
+FROM db_analitycs_olist.order_payments;
+
+
+
+INSERT INTO staging_analitycs_olist.st_order_reviews(
+	review_id,
+    order_id,
+    score,
+    comment_title,
+    comment_message,
+    creation_date,
+    answer_timestamp
+)
+SELECT	review_id,
+		order_id,
+		score,
+		comment_title,
+		comment_message,
+		creation_date,
+		answer_timestamp
+FROM db_analitycs_olist.order_reviews;
+
+
+
+INSERT INTO staging_analitycs_olist.st_orders(
+	order_id,
+    customer_id,
+    status,
+    purchase_timestamp,
+    approved_at,
+    delivered_carrier_date,
+    delivered_customer_date,
+    estimated_delivery_date
+)
+SELECT	order_id,
+		customer_id,
+		status,
+		purchase_timestamp,
+		approved_at,
+		delivered_carrier_date,
+		delivered_customer_date,
+		estimated_delivery_date
+FROM db_analitycs_olist.orders;
+
+
+
+INSERT INTO staging_analitycs_olist.st_product_category(
+	product_category_name,
+    product_category_name_english
+)
+SELECT	product_category_name,
+		product_category_name_english
+FROM db_analitycs_olist.product_category;
+
+
+
+INSERT INTO staging_analitycs_olist.st_products(
+	product_id,
+    category_name
+)
+SELECT	product_id,
+		category_name
+FROM db_analitycs_olist.products;
+
+
+
+INSERT INTO staging_analitycs_olist.st_sellers(
+	seller_id,
+    seller_zip_code_prefix,
+    seller_city,
+    seller_state
+)
+SELECT 	seller_id,
+		seller_zip_code_prefix,
+		seller_city,
+		seller_state
+FROM db_analitycs_olist.sellers;
+
+
+
+
+INSERT INTO staging_analitycs_olist.st_api_enderecos(
+	prefix,
+    cep,
+    bairro,
+    estado,
+    regiao,
+    status
+)
+SELECT	prefix,
+		cep,
+		bairro,
+		estado,
+		regiao,
+		status
+FROM db_analitycs_olist.api_enderecos;
+
+
+
+/* ---------- Deletando duplicadas da tabela customers ---------- */
+/*
+-- Desabilitando Safe Updates
+SET SQL_SAFE_UPDATES = 0;
+
+-- Criando tabela temporária
+CREATE TABLE st_dim_customer_limpa(
+	customer_id 				VARCHAR(100),
+    customer_unique_id			VARCHAR(100),
+    customer_zip_code_prefix	INT,
+    customer_city				VARCHAR(100),
+    customer_state				VARCHAR(50)
+);
+
+-- Inserindo idCustomer único na tabela nova
+INSERT INTO staging_analitycs_olist.st_dim_customer_limpa(
+	customer_unique_id
+)
+SELECT 	DISTINCT(customer_id)
+FROM staging_analitycs_olist.st_customers;
+
+-- Inserindo demais campos na tabela temporária
+UPDATE staging_analitycs_olist.st_dim_customer_limpa	A
+INNER JOIN staging_analitycs_olist.st_customers			B
+	ON A.customer_unique_id = B.customer_unique_id
+SET
+	A.customer_id 				= B.customer_id,
+    A.customer_zip_code_prefix 	= B.customer_zip_code_prefix,
+    A.customer_city				= B.customer_city,
+    A.customer_state 			= B.customer_state;
+
+
+-- Limpando tabela original do ST com dados duplicados
+TRUNCATE TABLE staging_analitycs_olist.st_customers;
+
+-- Inserindo os dados com idCustomer único
+INSERT INTO staging_analitycs_olist.st_customers
+	SELECT * FROM staging_analitycs_olist.st_dim_customer_limpa;
+  
+-- Deletando a tabela temporária
+DROP TABLE staging_analitycs_olist.st_dim_customer_limpa;
+
+-- Habilitando novamente o Safe Updates
+SET SQL_SAFE_UPDATES = 1;
+*/
+END $$
+
+DELIMITER ;

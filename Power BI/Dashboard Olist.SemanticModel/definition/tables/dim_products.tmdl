@@ -1,0 +1,44 @@
+table dim_products
+	lineageTag: 4b7f16e5-7852-45a7-8564-f315dccf2b2d
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: b6fef926-7b73-4037-856d-09842345c5b4
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column idProduto
+		dataType: string
+		lineageTag: 93699019-e941-49a9-b641-33450569cd93
+		summarizeBy: none
+		sourceColumn: idProduto
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria
+		dataType: string
+		lineageTag: cb65bb65-2016-42c5-b2a9-350b6c691c6f
+		summarizeBy: none
+		sourceColumn: categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_products = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("localhost", "dw_analitycs_olist", [ReturnSingleDatabase=true, HierarchicalNavigation=true]),
+				    dw_analitycs_olist = Fonte{[Schema="dw_analitycs_olist"]}[Data],
+				    dim_products1 = dw_analitycs_olist{[Name="dim_products"]}[Data],
+				    #"Colunas Removidas" = Table.RemoveColumns(dim_products1,{"dw_analitycs_olist.fato_orders"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Removidas",{{"id", Int64.Type}, {"idProduto", type text}, {"categoria", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

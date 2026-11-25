@@ -1,0 +1,61 @@
+table dim_sellers
+	lineageTag: fb7e94bc-3024-442a-9da7-a5a45e2cccc6
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7c2eca82-5df2-47fa-8bb4-4888f717b347
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column idSeller
+		dataType: string
+		lineageTag: 81f338ef-fe9a-40ae-9a1a-8b6a3e8b4393
+		summarizeBy: none
+		sourceColumn: idSeller
+
+		annotation SummarizationSetBy = Automatic
+
+	column prefixo
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ee0b1af-a731-427a-a8a5-47b85b2d119b
+		summarizeBy: none
+		sourceColumn: prefixo
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: 441d26a7-8470-4f3d-aed8-6c577ebc6171
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column UF
+		dataType: string
+		lineageTag: 49b14ec6-04f9-4141-a76f-12d3fa7a9949
+		summarizeBy: none
+		sourceColumn: UF
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_sellers = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("localhost", "dw_analitycs_olist", [ReturnSingleDatabase=true, HierarchicalNavigation=true]),
+				    dw_analitycs_olist = Fonte{[Schema="dw_analitycs_olist"]}[Data],
+				    dim_sellers1 = dw_analitycs_olist{[Name="dim_sellers"]}[Data],
+				    #"Colunas Removidas" = Table.RemoveColumns(dim_sellers1,{"dw_analitycs_olist.fato_orders"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Removidas",{{"id", Int64.Type}, {"idSeller", type text}, {"prefixo", Int64.Type}, {"city", type text}, {"UF", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

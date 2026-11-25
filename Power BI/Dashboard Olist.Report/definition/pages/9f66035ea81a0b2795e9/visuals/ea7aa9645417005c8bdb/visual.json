@@ -1,0 +1,192 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "ea7aa9645417005c8bdb",
+  "position": {
+    "x": 366.25961922513648,
+    "y": 570.55518572759956,
+    "z": 1,
+    "height": 478.53015577153514,
+    "width": 1446.633470909333,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_calendario"
+                    }
+                  },
+                  "Property": "NomeMes"
+                }
+              },
+              "queryRef": "dim_calendario.NomeMes",
+              "nativeQueryRef": "NomeMes"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "# | Qtd Itens"
+                }
+              },
+              "queryRef": "Medidas.# | Qtd Itens",
+              "nativeQueryRef": "# | Qtd Itens"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Frete Medio Item"
+                }
+              },
+              "queryRef": "Medidas.$ | Frete Medio Item",
+              "nativeQueryRef": "$ | Frete Medio Item"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "# | Qtd Ordens"
+                }
+              },
+              "queryRef": "Medidas.# | Qtd Ordens",
+              "nativeQueryRef": "# | Qtd Ordens"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Frete Medio Pedido"
+                }
+              },
+              "queryRef": "Medidas.$ | Frete Medio Pedido",
+              "nativeQueryRef": "$ | Frete Medio Pedido"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Faturamento"
+                }
+              },
+              "queryRef": "Medidas.$ | Faturamento",
+              "nativeQueryRef": "$ | Faturamento"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "% | Variacao Faturamento Mensal"
+                }
+              },
+              "queryRef": "Medidas.% | Variacao Faturamento Mensal",
+              "nativeQueryRef": "% | Variacao Faturamento Mensal"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Preco Medio"
+                }
+              },
+              "queryRef": "Medidas.$ | Preco Medio",
+              "nativeQueryRef": "$ | Preco Medio"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Valor Medio Itens"
+                }
+              },
+              "queryRef": "Medidas.$ | Valor Medio Itens",
+              "nativeQueryRef": "$ | Valor Medio Itens"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "$ | Ticket Medio"
+                }
+              },
+              "queryRef": "Medidas.$ | Ticket Medio",
+              "nativeQueryRef": "$ | Ticket Medio"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

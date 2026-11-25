@@ -1,0 +1,210 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "a8695561607c830c4bd6",
+  "position": {
+    "x": 1139.6378811077091,
+    "y": 698.65401057615463,
+    "z": 6,
+    "height": 351.5356144321662,
+    "width": 741.72174144587939,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_sellers"
+                    }
+                  },
+                  "Property": "idSeller"
+                }
+              },
+              "queryRef": "dim_sellers.idSeller",
+              "nativeQueryRef": "idSeller"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "# | Qtd Orders Atrasados"
+                }
+              },
+              "queryRef": "Medidas.# | Qtd Orders Atrasados",
+              "nativeQueryRef": "Qtd Atrasados",
+              "displayName": "Qtd Atrasados"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "% | Pedidos Atrasados"
+                }
+              },
+              "queryRef": "Medidas.% | Pedidos Atrasados",
+              "nativeQueryRef": "% Atrasados",
+              "displayName": "% Atrasados"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "# | Qtd Pedido Nao Entregues"
+                }
+              },
+              "queryRef": "Medidas.# | Qtd Pedido Nao Entregues",
+              "nativeQueryRef": "Qtd Não Entregues",
+              "displayName": "Qtd Não Entregues"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "% | Pedidos Nao Entregues"
+                }
+              },
+              "queryRef": "Medidas.% | Pedidos Nao Entregues",
+              "nativeQueryRef": "% Não Entregues",
+              "displayName": "% Não Entregues"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d374eab5dddd5a1066e1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_sellers"
+              }
+            },
+            "Property": "idSeller"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "dim_sellers",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "d"
+                            }
+                          },
+                          "Property": "idSeller"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "2f39c416adc8d0d8d503",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "# | Qtd Orders Atrasados"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "cac3392fa78004ad3aa8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "% | Pedidos Nao Entregues"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "43f912046d86957a0182",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "% | Pedidos Atrasados"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "65453c2335c2a30e34a2",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "# | Qtd Pedido Nao Entregues"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

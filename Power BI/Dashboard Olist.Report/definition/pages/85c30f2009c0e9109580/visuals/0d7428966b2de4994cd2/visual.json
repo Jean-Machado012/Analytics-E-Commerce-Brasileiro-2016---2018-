@@ -1,0 +1,130 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "0d7428966b2de4994cd2",
+  "position": {
+    "x": 245.15458993476238,
+    "y": 131.77982604679798,
+    "z": 0,
+    "height": 171.16655571827988,
+    "width": 1636.205032618826,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Tempo Medio Compra / Pagamento"
+                }
+              },
+              "queryRef": "Medidas.Tempo Medio Compra / Pagamento",
+              "nativeQueryRef": "Tempo Medio Compra / Pagamento"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Tempo Medio Compra / Entrega"
+                }
+              },
+              "queryRef": "Medidas.Tempo Compra / Entrega",
+              "nativeQueryRef": "Tempo Medio Compra / Entrega"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Tempo Medio Pagamento / Prev Entrega"
+                }
+              },
+              "queryRef": "Medidas.Tempo Medio Pagamento / Prev Entrega",
+              "nativeQueryRef": "Tempo Medio Pagamento / Prev Entrega"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Tempo Medio Previsao / Entrega"
+                }
+              },
+              "queryRef": "Medidas.Tempo Medio Previsao / Entrega",
+              "nativeQueryRef": "Tempo Medio Previsao / Entrega"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Tempo Medio Pagamento / Recebido Customer"
+                }
+              },
+              "queryRef": "Medidas.Tempo Medio Pagamento / Recebido Customer",
+              "nativeQueryRef": "Tempo Medio Pagamento / Recebido Customer"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Medidas"
+                  }
+                },
+                "Property": "Tempo Medio Compra / Entrega"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Tempo Compra / Entrega"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

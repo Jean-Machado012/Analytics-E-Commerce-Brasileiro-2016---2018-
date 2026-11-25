@@ -12,7 +12,7 @@ caminho_prefixo = base_dir / 'prefixos.json'
 caminho_enderecos = base_dir / 'Enderecos' / 'enderecos.json'
 caminho_checkpoint = base_dir / 'Enderecos' / 'checkpoint.json'
 
-limite_requisicoes = 400
+limite_requisicoes = 300
 
 conn_mysql = URL.create(
     drivername = 'mysql+mysqlconnector',

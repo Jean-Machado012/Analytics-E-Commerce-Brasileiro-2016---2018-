@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "d1389acb9aec4e7729ec",
+  "displayName": "T.T Geral Heatmap",
+  "displayOption": "FitToPage",
+  "height": 300,
+  "width": 400,
+  "type": "Tooltip"
+}
